@@ -4,10 +4,10 @@
   "description": "Rollback a directory to a prior snapshot",
   "main": "build/index.js",
   "scripts": {
-    "test": "npm run cover && npm run tslint",
+    "test": "jest --coverage && npm run tslint",
     "watch": "jest --watch",
     "build": "tsc",
-    "cover": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "cover": "npm run tslint && jest --coverage --coverageReporters=text-lcov | coveralls",
     "docs": "typedoc --theme markdown --out docs --readme none",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
     "preversion": "npm run build && npm run docs && git add -A",
@@ -41,6 +41,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.6",
     "@types/mock-fs": "^3.6.30",
+    "coveralls": "^3.0.3",
     "jest": "^24.1.0",
     "jest-extended": "^0.11.1",
     "mock-fs": "^4.8.0",

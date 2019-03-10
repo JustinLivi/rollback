@@ -11,7 +11,7 @@ test_10:
       - node_modules
   script:
     - npm install
-    - npm test
+    - npm run cover
   tags:
     - docker
 
@@ -25,7 +25,7 @@ test_8:
       - node_modules
   script:
     - npm install
-    - npm test
+    - npm run cover
   tags:
     - docker
 
@@ -39,6 +39,6 @@ test_6:
       - node_modules
   script:
     - npm install
-    - npm test
+    - npm run cover
   tags:
     - docker
