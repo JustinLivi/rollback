@@ -7,7 +7,7 @@
     "test": "npm run cover && npm run tslint",
     "watch": "jest --watch",
     "build": "tsc",
-    "cover": "jest --coverage",
+    "cover": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "docs": "typedoc --theme markdown --out docs --readme none",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
     "preversion": "npm run build && npm run docs && git add -A",
