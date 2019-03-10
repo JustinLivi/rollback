@@ -14,17 +14,16 @@ Both typescript and javascript support come out of the box.
 
 ```typescript
 import { createRollback } from 'rollback';
+import { writeFileSync } from 'fs';
 
 snapshot({
   path: '/some/directory'
-})
-  .then(() => {
-    // make some changes in /some/directory
-  })
-  .then(() => {
-    // rollback all the changes
-    return snap.rollback();
-  });
+}).then(snap => {
+  // make some changes
+  writeFileSync('/some/directory/myFile', 'some updates');
+  // then rollback all the changes
+  return snap.rollback();
+});
 ```
 
 # API Documentation
