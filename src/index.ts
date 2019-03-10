@@ -1,5 +1,5 @@
 // tslint:disable:no-implicit-dependencies
-import { copy, CopyOptions, CopyOptionsSync, copySync } from 'fs-extra';
+import { copy, CopyOptions, CopyOptionsSync, copySync, emptyDir, emptyDirSync } from 'fs-extra';
 import { dirSync, Options as TmpOptions } from 'tmp';
 import { dir } from 'tmp-promise';
 
@@ -51,23 +51,19 @@ export interface Snapshot {
 
 /**
  * The context necessary for a rollback
- * @property method the method to perform the rollback
  * @property src the target source
  * @property dest the temporary copy
  */
 export type RollbackContext = RollbackOptions & {
-  method: typeof copy | typeof copySync;
   src: string;
   dest: string;
 };
 
 /**
  * Creates a `rollback` closure
- * Uses either the async or sync copy
  * @param rollbackContext the context for the rollback closure
  */
 export const createRollback = ({
-  method,
   src,
   dest,
   preserveTimestamps: preserveTimestampsDefault,
@@ -80,7 +76,36 @@ export const createRollback = ({
     preserveTimestamps: preserveTimestampsDefault,
     recursive: recursiveDefault
   }
-) => method(dest, src, { preserveTimestamps, recursive });
+) => {
+  try {
+    await emptyDir(src);
+    await copy(dest, src, { preserveTimestamps, recursive });
+  } catch (error) {
+    throw error;
+  }
+};
+
+/**
+ * Creates a `rollbackSync` closure
+ * @param rollbackContext the context for the rollback closure
+ */
+export const createRollbackSync = ({
+  src,
+  dest,
+  preserveTimestamps: preserveTimestampsDefault,
+  recursive: recursiveDefault
+}: RollbackContext) => (
+  {
+    preserveTimestamps = preserveTimestampsDefault,
+    recursive = recursiveDefault
+  }: RollbackOptions = {
+    preserveTimestamps: preserveTimestampsDefault,
+    recursive: recursiveDefault
+  }
+) => {
+  emptyDirSync(src);
+  copySync(dest, src, { preserveTimestamps, recursive });
+};
 
 /**
  * Asynchronously creates a snapshot for a directory
@@ -93,12 +118,12 @@ export const snapshot = async ({
   filter,
   recursive = true,
   ...tmpOptions
-}: SnapshotOptions): Promise<Snapshot> => {
+}: SnapshotOptions = {}): Promise<Snapshot> => {
   try {
     const directory = await dir(tmpOptions);
     const { path: dest } = directory;
     await copy(src, dest, { preserveTimestamps, filter, recursive });
-    const rollbackContextBase = {
+    const rollbackContext = {
       preserveTimestamps,
       recursive,
       src,
@@ -106,14 +131,8 @@ export const snapshot = async ({
     };
     return {
       ...directory,
-      rollback: createRollback({
-        ...rollbackContextBase,
-        method: copy
-      }),
-      rollbackSync: createRollback({
-        ...rollbackContextBase,
-        method: copySync
-      })
+      rollback: createRollback(rollbackContext),
+      rollbackSync: createRollbackSync(rollbackContext)
     };
   } catch (error) {
     throw error;
@@ -131,11 +150,11 @@ export const snapshotSync = ({
   filter,
   recursive = true,
   ...tmpOptions
-}: SnapshotOptionsSync): Snapshot => {
+}: SnapshotOptionsSync = {}): Snapshot => {
   const directory = dirSync(tmpOptions);
   const { name: dest, removeCallback } = directory;
-  copySync(src, name, { preserveTimestamps, filter, recursive });
-  const rollbackContextBase = {
+  copySync(src, dest, { preserveTimestamps, filter, recursive });
+  const rollbackContext = {
     preserveTimestamps,
     recursive,
     src,
@@ -144,13 +163,7 @@ export const snapshotSync = ({
   return {
     path: dest,
     cleanup: removeCallback,
-    rollback: createRollback({
-      ...rollbackContextBase,
-      method: copy
-    }),
-    rollbackSync: createRollback({
-      ...rollbackContextBase,
-      method: copySync
-    })
+    rollback: createRollback(rollbackContext),
+    rollbackSync: createRollbackSync(rollbackContext)
   };
 };
