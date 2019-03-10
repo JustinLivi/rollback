@@ -8,6 +8,7 @@
     "watch": "jest --watch",
     "build": "tsc",
     "cover": "jest --coverage",
+    "docs": "typedoc --theme markdown --out docs --readme none",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
     "preversion": "npm run build && git add -A",
     "release": "np"
@@ -50,6 +51,8 @@
     "tslint": "^5.13.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.1.27",
     "typescript": "^3.3.3333"
   }
 }

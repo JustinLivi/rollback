@@ -27,6 +27,10 @@ snapshot({
   });
 ```
 
+# API Documentation
+
+[API](https://github.com/JustinLivi/rollback/blob/master/docs/README.md)
+
 # License
 
 Licensed under [MIT](https://github.com/JustinLivi/rollback/blob/master/LICENSE)
