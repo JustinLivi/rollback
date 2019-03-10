@@ -33,7 +33,7 @@
 
 **Ƭ CopyOptionsProps**: *"preserveTimestamps" \| "filter" \| "recursive"*
 
-*Defined in [index.ts:9](https://github.com/JustinLivi/rollback/blob/4fa1538/src/index.ts#L9)*
+*Defined in [index.ts:9](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L9)*
 
 Options exposed from `fs-extra`'s `copy` and `copySync` methods
 
@@ -44,7 +44,7 @@ ___
 
 **Ƭ RollbackContext**: *[RollbackOptions](_index_.md#rollbackoptions) & `object`*
 
-*Defined in [index.ts:57](https://github.com/JustinLivi/rollback/blob/4fa1538/src/index.ts#L57)*
+*Defined in [index.ts:57](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L57)*
 
 The context necessary for a rollback
 
@@ -59,7 +59,7 @@ ___
 
 **Ƭ RollbackOptions**: *`Pick`<`CopyOptions`, "preserveTimestamps" \| "recursive">*
 
-*Defined in [index.ts:32](https://github.com/JustinLivi/rollback/blob/4fa1538/src/index.ts#L32)*
+*Defined in [index.ts:32](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L32)*
 
 Options passed to `rollback` and `rollbackSync`
 
@@ -70,7 +70,7 @@ ___
 
 **Ƭ SnapshotOptions**: *`TmpOptions` & `Pick`<`CopyOptions`, [CopyOptionsProps](_index_.md#copyoptionsprops)> & `object`*
 
-*Defined in [index.ts:15](https://github.com/JustinLivi/rollback/blob/4fa1538/src/index.ts#L15)*
+*Defined in [index.ts:15](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L15)*
 
 Options passed to `snapshot`
 
@@ -83,7 +83,7 @@ ___
 
 **Ƭ SnapshotOptionsSync**: *`TmpOptions` & `Pick`<`CopyOptionsSync`, [CopyOptionsProps](_index_.md#copyoptionsprops)> & `object`*
 
-*Defined in [index.ts:24](https://github.com/JustinLivi/rollback/blob/4fa1538/src/index.ts#L24)*
+*Defined in [index.ts:24](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L24)*
 
 Options passed to `snapshotSync`
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **createRollback**(__namedParameters: *`object`*): `(Anonymous function)`
 
-*Defined in [index.ts:66](https://github.com/JustinLivi/rollback/blob/4fa1538/src/index.ts#L66)*
+*Defined in [index.ts:66](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L66)*
 
 Creates a `rollback` closure
 
@@ -123,7 +123,7 @@ ___
 
 ▸ **createRollbackSync**(__namedParameters: *`object`*): `(Anonymous function)`
 
-*Defined in [index.ts:92](https://github.com/JustinLivi/rollback/blob/4fa1538/src/index.ts#L92)*
+*Defined in [index.ts:95](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L95)*
 
 Creates a `rollbackSync` closure
 
@@ -147,9 +147,9 @@ ___
 
 ▸ **snapshot**(__namedParameters?: *`object`*): `Promise`<[Snapshot](../interfaces/_index_.snapshot.md)>
 
-*Defined in [index.ts:115](https://github.com/JustinLivi/rollback/blob/4fa1538/src/index.ts#L115)*
+*Defined in [index.ts:121](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L121)*
 
-Asynchronously creates a snapshot for a directory Copies all the contents into a temporary location
+Asynchronously creates a snapshot for a directory. Copies all the contents into a temporary location.
 
 **Parameters:**
 
@@ -172,9 +172,9 @@ ___
 
 ▸ **snapshotSync**(__namedParameters?: *`object`*): [Snapshot](../interfaces/_index_.snapshot.md)
 
-*Defined in [index.ts:147](https://github.com/JustinLivi/rollback/blob/4fa1538/src/index.ts#L147)*
+*Defined in [index.ts:153](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L153)*
 
-Synchronously creates a snapshot for a directory Copies all the contents into a temporary location
+Synchronously creates a snapshot for a directory. Copies all the contents into a temporary location.
 
 **Parameters:**
 
