@@ -13,7 +13,7 @@ Both typescript and javascript support come out of the box.
 # Basic Usage
 
 ```typescript
-import { createRollback } from 'rollback';
+import { snapshot } from 'rollback';
 import { writeFileSync } from 'fs';
 
 snapshot({
