@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "lib": ["es2015", "dom"],
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "outDir": "./build",
+    "declarationDir": "./types",
+    "paths": {
+      "jest-extended": ["jest-extended"]
+    }
+  },
+  "include": ["./src/**/*", "./@types", "global.d.ts"],
+  "exclude": ["node_modules", "**/*.test.ts"]
+}
