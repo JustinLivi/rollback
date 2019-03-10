@@ -1,5 +1,15 @@
 // tslint:disable:no-implicit-dependencies
-import { copy, CopyOptions, CopyOptionsSync, copySync, emptyDir, emptyDirSync, pathExists, pathExistsSync } from 'fs-extra';
+import {
+  copy,
+  CopyOptions,
+  CopyOptionsSync,
+  copySync,
+  emptyDir,
+  emptyDirSync,
+  ensureDirSync,
+  pathExists,
+  pathExistsSync,
+} from 'fs-extra';
 import { dirSync, Options as TmpOptions } from 'tmp';
 import { dir } from 'tmp-promise';
 
@@ -159,6 +169,7 @@ export const snapshotSync = ({
 }: SnapshotOptionsSync = {}): Snapshot => {
   const directory = dirSync(tmpOptions);
   const { name: dest, removeCallback } = directory;
+  ensureDirSync(dest);
   copySync(src, dest, { preserveTimestamps, filter, recursive });
   const rollbackContext = {
     preserveTimestamps,

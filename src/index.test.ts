@@ -3,6 +3,7 @@ import 'jest-extended';
 
 import { pathExists, pathExistsSync, readFile, readFileSync, stat, statSync, writeFile, writeFileSync } from 'fs-extra';
 import mock from 'mock-fs';
+import nodeVersion from 'node-version';
 import { resolve } from 'path';
 
 import { createRollback, createRollbackSync, snapshot, snapshotSync } from '.';
@@ -44,7 +45,7 @@ describe('snapshot', () => {
     await expect(snapshot({ path: './invalid' })).toReject();
   });
 
-  it('should have logic defaults', async () => {
+  it('should have logical defaults', async () => {
     mock();
     await snapshot();
     await snapshot({});
@@ -80,11 +81,17 @@ describe('snapshotSync', () => {
     expect(pathExistsSync(testfile2)).toBe(false);
   });
 
-  it('should have logic defaults', async () => {
-    mock();
-    snapshotSync();
-    snapshotSync({});
-    mock.restore();
+  it('should have logical defaults', async () => {
+    // mock fs doesn't handle tmp dir well on older versions
+    if (parseInt(nodeVersion.major, 10) < 8) {
+      snapshotSync();
+      snapshotSync({});
+    } else {
+      mock();
+      snapshotSync();
+      snapshotSync({});
+      mock.restore();
+    }
   });
 
   it('should throw on invalid dir', () => {
