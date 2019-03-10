@@ -10,7 +10,7 @@
     "cover": "jest --coverage",
     "docs": "typedoc --theme markdown --out docs --readme none",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
-    "preversion": "npm run build && git add -A",
+    "preversion": "npm run build && npm run docs && git add -A",
     "release": "np"
   },
   "repository": {

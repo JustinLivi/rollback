@@ -1,5 +1,5 @@
 // tslint:disable:no-implicit-dependencies
-import { copy, CopyOptions, CopyOptionsSync, copySync, emptyDir, emptyDirSync } from 'fs-extra';
+import { copy, CopyOptions, CopyOptionsSync, copySync, emptyDir, emptyDirSync, pathExists, pathExistsSync } from 'fs-extra';
 import { dirSync, Options as TmpOptions } from 'tmp';
 import { dir } from 'tmp-promise';
 
@@ -78,6 +78,9 @@ export const createRollback = ({
   }
 ) => {
   try {
+    if (!(await pathExists(dest))) {
+      throw new Error(`path ${dest} does not exist`);
+    }
     await emptyDir(src);
     await copy(dest, src, { preserveTimestamps, recursive });
   } catch (error) {
@@ -103,13 +106,16 @@ export const createRollbackSync = ({
     recursive: recursiveDefault
   }
 ) => {
+  if (!pathExistsSync(dest)) {
+    throw new Error(`path ${dest} does not exist`);
+  }
   emptyDirSync(src);
   copySync(dest, src, { preserveTimestamps, recursive });
 };
 
 /**
- * Asynchronously creates a snapshot for a directory
- * Copies all the contents into a temporary location
+ * Asynchronously creates a snapshot for a directory.
+ * Copies all the contents into a temporary location.
  * @param options
  */
 export const snapshot = async ({
@@ -140,8 +146,8 @@ export const snapshot = async ({
 };
 
 /**
- * Synchronously creates a snapshot for a directory
- * Copies all the contents into a temporary location
+ * Synchronously creates a snapshot for a directory.
+ * Copies all the contents into a temporary location.
  * @param options
  */
 export const snapshotSync = ({

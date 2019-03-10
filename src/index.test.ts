@@ -1,8 +1,11 @@
 // tslint:disable:no-implicit-dependencies
+import 'jest-extended';
+
 import { pathExists, pathExistsSync, readFile, readFileSync, stat, statSync, writeFile, writeFileSync } from 'fs-extra';
+import mock from 'mock-fs';
 import { resolve } from 'path';
 
-import { snapshot, snapshotSync } from '.';
+import { createRollback, createRollbackSync, snapshot, snapshotSync } from '.';
 
 const testfile = './testfile.txt';
 
@@ -36,6 +39,17 @@ describe('snapshot', () => {
     await snap.rollback();
     expect(await pathExists(testfile2)).toBe(false);
   });
+
+  it('should reject on invalid dir', async () => {
+    await expect(snapshot({ path: './invalid' })).toReject();
+  });
+
+  it('should have logic defaults', async () => {
+    mock();
+    await snapshot();
+    await snapshot({});
+    mock.restore();
+  });
 });
 
 describe('snapshotSync', () => {
@@ -64,5 +78,33 @@ describe('snapshotSync', () => {
     expect(testfileStats.isFile()).toBe(true);
     snap.rollbackSync();
     expect(pathExistsSync(testfile2)).toBe(false);
+  });
+
+  it('should have logic defaults', async () => {
+    mock();
+    snapshotSync();
+    snapshotSync({});
+    mock.restore();
+  });
+
+  it('should throw on invalid dir', () => {
+    expect(() => snapshotSync({ path: './invalid' })).toThrow();
+  });
+});
+
+describe('rollback', () => {
+  it('should reject on error', () => {
+    const rollback = createRollback({ src: './invalid', dest: './invalid' });
+    return expect(rollback()).toReject();
+  });
+});
+
+describe('rollback', () => {
+  it('should throw on error', () => {
+    const rollback = createRollbackSync({
+      src: './invalid',
+      dest: './invalid'
+    });
+    expect(() => rollback()).toThrow();
   });
 });
