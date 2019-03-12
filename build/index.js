@@ -162,6 +162,7 @@ exports.snapshotSync = function (_a) {
     var _b = _a.path, src = _b === void 0 ? process.cwd() : _b, _c = _a.preserveTimestamps, preserveTimestamps = _c === void 0 ? false : _c, filter = _a.filter, _d = _a.recursive, recursive = _d === void 0 ? true : _d, tmpOptions = __rest(_a, ["path", "preserveTimestamps", "filter", "recursive"]);
     var directory = tmp_1.dirSync(tmpOptions);
     var dest = directory.name, removeCallback = directory.removeCallback;
+    fs_extra_1.ensureDirSync(dest);
     fs_extra_1.copySync(src, dest, { preserveTimestamps: preserveTimestamps, filter: filter, recursive: recursive });
     var rollbackContext = {
         preserveTimestamps: preserveTimestamps,

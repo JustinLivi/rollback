@@ -38,7 +38,7 @@ A Snapshot object Use to either rollback to the original contents or cleanup the
 
 **● path**: *`string`*
 
-*Defined in [index.ts:46](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L46)*
+*Defined in [index.ts:56](https://github.com/JustinLivi/rollback/blob/cce2349/src/index.ts#L56)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 ▸ **cleanup**(): `void`
 
-*Defined in [index.ts:47](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L47)*
+*Defined in [index.ts:57](https://github.com/JustinLivi/rollback/blob/cce2349/src/index.ts#L57)*
 
 **Returns:** `void`
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **rollback**(options?: *[RollbackOptions](../modules/_index_.md#rollbackoptions)*): `Promise`<`void`>
 
-*Defined in [index.ts:48](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L48)*
+*Defined in [index.ts:58](https://github.com/JustinLivi/rollback/blob/cce2349/src/index.ts#L58)*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ ___
 
 ▸ **rollbackSync**(options?: *[RollbackOptions](../modules/_index_.md#rollbackoptions)*): `void`
 
-*Defined in [index.ts:49](https://github.com/JustinLivi/rollback/blob/dbb2e7b/src/index.ts#L49)*
+*Defined in [index.ts:59](https://github.com/JustinLivi/rollback/blob/cce2349/src/index.ts#L59)*
 
 **Parameters:**
 
