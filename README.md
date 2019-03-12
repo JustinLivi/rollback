@@ -1,6 +1,11 @@
 # Rollback
 
+![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/justinlivi/rollback.svg)
 [![Coverage Status](https://coveralls.io/repos/gitlab/justinlivi/rollback/badge.svg?branch=master)](https://coveralls.io/gitlab/justinlivi/rollback?branch=master)
+![David](https://img.shields.io/david/justinlivi/rollback.svg)
+![NPM](https://img.shields.io/npm/l/rollback.svg)
+![node](https://img.shields.io/node/v/rollback.svg)
+![npm](https://img.shields.io/npm/v/rollback.svg)
 
 [![Alt text](https://img.youtube.com/vi/rS-HcK7d-LE/0.jpg)](https://www.youtube.com/watch?v=rS-HcK7d-LE)
 

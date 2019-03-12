@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Rollback a directory to a prior snapshot",
   "main": "build/index.js",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "test": "jest --coverage && npm run tslint",
     "watch": "jest --watch",
