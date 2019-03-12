@@ -24,7 +24,7 @@ export type CopyOptionsProps = 'preserveTimestamps' | 'filter' | 'recursive';
  */
 export type SnapshotOptions = TmpOptions &
   Pick<CopyOptions, CopyOptionsProps> & {
-    path?: string;
+    path: string;
   };
 
 /**
@@ -33,7 +33,7 @@ export type SnapshotOptions = TmpOptions &
  */
 export type SnapshotOptionsSync = TmpOptions &
   Pick<CopyOptionsSync, CopyOptionsProps> & {
-    path?: string;
+    path: string;
   };
 
 /**
@@ -129,12 +129,12 @@ export const createRollbackSync = ({
  * @param options
  */
 export const snapshot = async ({
-  path: src = process.cwd(),
+  path: src,
   preserveTimestamps = false,
   filter,
   recursive = true,
   ...tmpOptions
-}: SnapshotOptions = {}): Promise<Snapshot> => {
+}: SnapshotOptions): Promise<Snapshot> => {
   try {
     const directory = await dir(tmpOptions);
     const { path: dest } = directory;
@@ -161,12 +161,12 @@ export const snapshot = async ({
  * @param options
  */
 export const snapshotSync = ({
-  path: src = process.cwd(),
+  path: src,
   preserveTimestamps = false,
   filter,
   recursive = true,
   ...tmpOptions
-}: SnapshotOptionsSync = {}): Snapshot => {
+}: SnapshotOptionsSync): Snapshot => {
   const directory = dirSync(tmpOptions);
   const { name: dest, removeCallback } = directory;
   ensureDirSync(dest);

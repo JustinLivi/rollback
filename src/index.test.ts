@@ -2,8 +2,6 @@
 import 'jest-extended';
 
 import { pathExists, pathExistsSync, readFile, readFileSync, stat, statSync, writeFile, writeFileSync } from 'fs-extra';
-import mock from 'mock-fs';
-import nodeVersion from 'node-version';
 import { resolve } from 'path';
 
 import { createRollback, createRollbackSync, snapshot, snapshotSync } from '.';
@@ -41,15 +39,21 @@ describe('snapshot', () => {
     expect(await pathExists(testfile2)).toBe(false);
   });
 
-  it('should reject on invalid dir', async () => {
-    await expect(snapshot({ path: './invalid' })).toReject();
+  it('should accept option overrides', async () => {
+    const snap = await snapshot({
+      path: testdir,
+      preserveTimestamps: true,
+      recursive: false
+    });
+    const [testfileStats, testfileTempStats] = await Promise.all(
+      [testfilePath, resolve(snap.path, testfile)].map(file => stat(file))
+    );
+    expect(testfileStats.mtime).toEqual(testfileTempStats.mtime);
+    await snap.rollback();
   });
 
-  it('should have logical defaults', async () => {
-    mock();
-    await snapshot();
-    await snapshot({});
-    mock.restore();
+  it('should reject on invalid dir', async () => {
+    await expect(snapshot({ path: './invalid' })).toReject();
   });
 });
 
@@ -81,17 +85,16 @@ describe('snapshotSync', () => {
     expect(pathExistsSync(testfile2)).toBe(false);
   });
 
-  it('should have logical defaults', async () => {
-    // mock fs doesn't handle tmp dir well on older versions
-    if (parseInt(nodeVersion.major, 10) < 8) {
-      snapshotSync();
-      snapshotSync({});
-    } else {
-      mock();
-      snapshotSync();
-      snapshotSync({});
-      mock.restore();
-    }
+  it('should accept option overrides', () => {
+    const snap = snapshotSync({
+      path: testdir,
+      preserveTimestamps: true,
+      recursive: false
+    });
+    const testfileStats = statSync(testfilePath);
+    const testfileTempStats = statSync(resolve(snap.path, testfile));
+    expect(testfileStats.mtime).toEqual(testfileTempStats.mtime);
+    snap.rollbackSync();
   });
 
   it('should throw on invalid dir', () => {
