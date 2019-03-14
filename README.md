@@ -6,10 +6,11 @@
 [![NPM](https://img.shields.io/npm/l/rollback.svg)](https://www.npmjs.com/package/rollback)
 [![node](https://img.shields.io/node/v/rollback.svg)](https://github.com/JustinLivi/rollback/blob/master/package.json)
 [![npm](https://img.shields.io/npm/v/rollback.svg)](https://www.npmjs.com/package/rollback)
+[![Greenkeeper badge](https://badges.greenkeeper.io/JustinLivi/rollback.svg)](https://greenkeeper.io/)
 
 > Rollback the rock!
 
-[![Alt text](https://i.imgur.com/nirHaAb.gif)](https://www.youtube.com/watch?v=rS-HcK7d-LE)
+[![Alt text](https://i.imgur.com/nirHaAb.gif)](https://www.youtube.com/watch?v=rS-HcK7d-LE) 
 
 Take a snapshot of a directory and then optionally rollback changes at a later time.
 
