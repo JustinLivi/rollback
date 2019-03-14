@@ -9,7 +9,7 @@
 
 > Rollback the rock!
 
-[![Alt text](https://i.imgur.com/nirHaAb.gif)](https://www.youtube.com/watch?v=rS-HcK7d-LE)
+[![Alt text](https://i.imgur.com/nirHaAb.gif)](https://www.youtube.com/watch?v=rS-HcK7d-LE) [![Greenkeeper badge](https://badges.greenkeeper.io/JustinLivi/rollback.svg)](https://greenkeeper.io/)
 
 Take a snapshot of a directory and then optionally rollback changes at a later time.
 
