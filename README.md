@@ -21,6 +21,8 @@ Both typescript and javascript support come out of the box.
 
 # Basic Usage
 
+Asynchronous API:
+
 ```typescript
 import { snapshot } from 'rollback';
 import { writeFileSync } from 'fs';
@@ -34,6 +36,33 @@ snapshot({
   return snap.rollback();
 });
 ```
+
+Synchronous API:
+
+```typescript
+import { snapshotSync } from 'rollback';
+import { writeFileSync } from 'fs';
+
+const snap = snapshotSync({
+  path: '/some/directory'
+});
+writeFileSync('/some/directory/myFile', 'some updates');
+snap.rollbackSync();
+```
+
+# Advanced Usage
+
+Rollback exposes two base methods: `snapshot` and `snapshotSync`.
+
+Both methods return a `Snapshot` object with the following properties:
+
+| property | type | description |
+|----------|------|-------------|
+| `path` | `string` | the path of the temporary directory |
+| `cleanup` | `() => void` | manually cleans up the temporary directory |
+| `rollback` | `(options?: RollbackOptions) => Promise<void>` | asynchronously rolls back any changes in the path to the snapshot |
+| `rollbackSync` | `(options?: RollbackOptions) => void` | synchronously rolls back any changes in the path to the snapshot |
+
 
 # API Documentation
 
