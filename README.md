@@ -54,15 +54,37 @@ snap.rollbackSync();
 
 Rollback exposes two base methods: `snapshot` and `snapshotSync`.
 
-Both methods return a `Snapshot` object with the following properties:
+The only required parameter is the `path` parameter which is a string representing the path to the directory to snapshot.
+
+Both methods accept all configuration options exposed by [tmp](https://www.npmjs.com/package/tmp#options).
+
+Additionally the following options from [fs-extra's copy](https://github.com/jprichardson/node-fs-extra/blob/master/docs/copy.md#copysrc-dest-options-callback) are supported:
+
+`preserveTimestamps, filter, recursive`
+
+`snapshot` returns a Promise which resolves with a `Snapshot` object and `snapshotSync` returns a `Snapshot` directly.
+
+## Snapshot
+
+A `Snapshot` object has the following properties:
 
 | property | type | description |
 |----------|------|-------------|
 | `path` | `string` | the path of the temporary directory |
 | `cleanup` | `() => void` | manually cleans up the temporary directory |
-| `rollback` | `(options?: RollbackOptions) => Promise<void>` | asynchronously rolls back any changes in the path to the snapshot |
-| `rollbackSync` | `(options?: RollbackOptions) => void` | synchronously rolls back any changes in the path to the snapshot |
+| `rollback` | `(options?: RollbackOptions) => Promise<void>` | asynchronously rolls back any changes to the snapshot |
+| `rollbackSync` | `(options?: RollbackOptions) => void` | synchronously rolls back any changes to the snapshot |
 
+`RollbackOptions` takes the following form:
+
+```typescript
+interface RollbackOptions {
+  preserveTimestamps?: boolean;
+  recursive?: boolean;
+}
+```
+
+The default for rollback options is whatever was specified in the `snapshot` or `snapshotSync` invocation that generated the `Snapshot` object.
 
 # API Documentation
 
