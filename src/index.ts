@@ -47,7 +47,7 @@ export type RollbackOptions = Pick<
 /**
  * A Snapshot object
  * Use to either rollback to the original contents or cleanup the temp dir
- * @property path the directory to snapshot; default cwd
+ * @property path the path of temporary directory
  * @property cleanup manually cleans up the temporary directory
  * @property rollback asynchronously rolls back any changes in the path to the snapshot
  * @property rollbackSync synchronously rolls back any changes in the path to the snapshot
