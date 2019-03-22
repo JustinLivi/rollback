@@ -12,7 +12,7 @@
 
 [![Alt text](https://i.imgur.com/nirHaAb.gif)](https://www.youtube.com/watch?v=rS-HcK7d-LE) 
 
-Take a snapshot of a directory and then optionally rollback changes at a later time.
+Undo pesky file system mutations with ease.
 
 # Installation
 
@@ -22,7 +22,9 @@ Both typescript and javascript support come out of the box.
 
 # Basic Usage
 
-Asynchronous API:
+## Asynchronous API
+
+Take a snapshot of a directory.
 
 ```typescript
 import { snapshot } from 'rollback';
@@ -38,7 +40,25 @@ snapshot({
 });
 ```
 
-Synchronous API:
+Take a snapshot of a file.
+
+```typescript
+import { snapshotFile } from 'rollback';
+import { writeFileSync } from 'fs';
+
+snapshotFile({
+  path: '/some/file.txt'
+}).then(snap => {
+  // make some changes
+  writeFileSync('/some/file.txt', 'some updates');
+  // then rollback all the changes
+  return snap.rollback();
+});
+```
+
+## Synchronous API
+
+Take a snapshot of a directory.
 
 ```typescript
 import { snapshotSync } from 'rollback';
@@ -51,19 +71,32 @@ writeFileSync('/some/directory/myFile', 'some updates');
 snap.rollbackSync();
 ```
 
+Take a snapshot of a file.
+
+```typescript
+import { snapshotFileSync } from 'rollback';
+import { writeFileSync } from 'fs';
+
+const snap = snapshotFileSync({
+  path: '/some/file.txt'
+});
+writeFileSync('/some/file.txt', 'some updates');
+snap.rollbackSync();
+```
+
 # Advanced Usage
 
-Rollback exposes two base methods: `snapshot` and `snapshotSync`.
+Rollback exposes four base methods: `snapshot`, `snapshotSync`, `snapshotFile`, and `snapshotFileSync`.
 
-The only required parameter is the `path` parameter which is a string representing the path to the directory to snapshot.
-
-Both methods accept all configuration options exposed by [tmp](https://www.npmjs.com/package/tmp#options).
+All methods accept all configuration options exposed by [tmp](https://www.npmjs.com/package/tmp#options).
 
 Additionally the following options from [fs-extra's copy](https://github.com/jprichardson/node-fs-extra/blob/master/docs/copy.md#copysrc-dest-options-callback) are supported:
 
-`preserveTimestamps, filter, recursive`
+`preserveTimestamps, filter, recursive` (`recursive` is only supported for `snapshot` and `snapshotSync`)
 
-`snapshot` returns a Promise which resolves with a `Snapshot` object and `snapshotSync` returns a `Snapshot` directly.
+`snapshot` and `snapshotFile` return a Promise which resolves with a `Snapshot` object.
+
+`snapshotSync` and `snapshotFileSync` return a `Snapshot` directly.
 
 ## Snapshot
 
@@ -81,11 +114,11 @@ A `Snapshot` object has the following properties:
 ```typescript
 interface RollbackOptions {
   preserveTimestamps?: boolean;
-  recursive?: boolean;
+  recursive?: boolean; // only supported if the snapshot is of a directory 
 }
 ```
 
-The default for rollback options is whatever was specified in the `snapshot` or `snapshotSync` invocation that generated the `Snapshot` object.
+The default for rollback options is whatever was specified in the `snapshot`, `snapshotSync`, `snapshotFile`, or `snapshotFileSync` invocation that generated the `Snapshot` object.
 
 # API Documentation
 
