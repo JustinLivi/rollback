@@ -1,5 +1,6 @@
 stages:
   - test
+  - cover
 
 test_10:
   image: node:10
@@ -14,6 +15,9 @@ test_10:
     - npm run cover
   tags:
     - docker
+  artifacts:
+    paths:
+      - coverage
 
 test_8:
   image: node:8
@@ -28,3 +32,22 @@ test_8:
     - npm run cover
   tags:
     - docker
+
+coveralls:
+  image: node:10
+  dependencies:
+    - test_10
+  stage: cover
+  cache:
+    key: node_modules
+    policy: pull
+    paths:
+      - node_modules
+  script:
+    - npm install
+    - npm run coverage
+  tags:
+    - docker
+  artifacts:
+    paths:
+      - coverage
