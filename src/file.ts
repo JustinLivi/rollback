@@ -1,6 +1,6 @@
 // tslint:disable:no-implicit-dependencies
 import { copy, CopyOptions, CopyOptionsSync, copySync, pathExists, pathExistsSync } from 'fs-extra';
-import { Options as TmpOptions } from 'tmp';
+import { FileOptions } from 'tmp';
 import { file, fileSync } from 'tmp-promise';
 
 /**
@@ -11,16 +11,13 @@ export type CopyOptionsFileProps = 'preserveTimestamps' | 'filter';
 /**
  * Options passed to `rollback` and `rollbackSync`
  */
-export type RollbackFileOptions = Pick<
-  CopyOptions,
-  CopyOptionsFileProps
->;
+export type RollbackFileOptions = Pick<CopyOptions, CopyOptionsFileProps>;
 
 /**
  * Options passed to `snapshot`
  * @property path - a path to the directory to snapshot. Defaults to cwd
  */
-export type SnapshotFileOptions = TmpOptions &
+export type SnapshotFileOptions = FileOptions &
   RollbackFileOptions & {
     path: string;
   };
@@ -29,7 +26,7 @@ export type SnapshotFileOptions = TmpOptions &
  * Options passed to `snapshotSync`
  * @property path - a path to the directory to snapshot. Defaults to cwd
  */
-export type SnapshotFileOptionsSync = TmpOptions &
+export type SnapshotFileOptionsSync = FileOptions &
   Pick<CopyOptionsSync, CopyOptionsFileProps> & {
     path: string;
   };
@@ -68,9 +65,7 @@ export const createRollbackFile = ({
   dest,
   preserveTimestamps: preserveTimestampsDefault
 }: RollbackFileContext) => async (
-  {
-    preserveTimestamps = preserveTimestampsDefault
-  }: RollbackFileOptions = {
+  { preserveTimestamps = preserveTimestampsDefault }: RollbackFileOptions = {
     preserveTimestamps: preserveTimestampsDefault
   }
 ) => {
@@ -93,9 +88,7 @@ export const createRollbackFileSync = ({
   dest,
   preserveTimestamps: preserveTimestampsDefault
 }: RollbackFileContext) => (
-  {
-    preserveTimestamps = preserveTimestampsDefault
-  }: RollbackFileOptions = {
+  { preserveTimestamps = preserveTimestampsDefault }: RollbackFileOptions = {
     preserveTimestamps: preserveTimestampsDefault
   }
 ) => {
