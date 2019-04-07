@@ -12,7 +12,7 @@ test_10:
       - node_modules
   script:
     - npm install
-    - npm run cover
+    - npm test
   tags:
     - docker
   artifacts:
@@ -29,7 +29,7 @@ test_8:
       - node_modules
   script:
     - npm install
-    - npm run cover
+    - npm test
   tags:
     - docker
 

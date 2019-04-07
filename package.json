@@ -10,7 +10,6 @@
     "test": "jest --coverage && npm run tslint",
     "watch": "jest --watch",
     "build": "tsc",
-    "cover": "npm run tslint && jest --coverage --coverageReporters=text-lcov",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "docs": "typedoc --theme markdown --out docs --readme none",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
