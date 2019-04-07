@@ -45,7 +45,7 @@ coveralls:
       - node_modules
   script:
     - npm install
-    - npm run coverage
+    - npm run coveralls
   tags:
     - docker
   artifacts:
