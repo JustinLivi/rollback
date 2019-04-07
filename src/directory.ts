@@ -10,7 +10,7 @@ import {
   pathExists,
   pathExistsSync,
 } from 'fs-extra';
-import { dirSync, Options as TmpOptions } from 'tmp';
+import { DirOptions, dirSync } from 'tmp';
 import { dir } from 'tmp-promise';
 
 /**
@@ -22,7 +22,7 @@ export type CopyOptionsProps = 'preserveTimestamps' | 'filter' | 'recursive';
  * Options passed to `snapshot`
  * @property path - a path to the directory to snapshot. Defaults to cwd
  */
-export type SnapshotOptions = TmpOptions &
+export type SnapshotOptions = DirOptions &
   Pick<CopyOptions, CopyOptionsProps> & {
     path: string;
   };
@@ -31,7 +31,7 @@ export type SnapshotOptions = TmpOptions &
  * Options passed to `snapshotSync`
  * @property path - a path to the directory to snapshot. Defaults to cwd
  */
-export type SnapshotOptionsSync = TmpOptions &
+export type SnapshotOptionsSync = DirOptions &
   Pick<CopyOptionsSync, CopyOptionsProps> & {
     path: string;
   };
