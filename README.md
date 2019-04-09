@@ -1,7 +1,7 @@
 # Rollback
 
 [![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/justinlivi/rollback.svg)](https://gitlab.com/justinlivi/rollback/pipelines)
-[![Coverage Status](https://coveralls.io/repos/gitlab/justinlivi/rollback/badge.svg?branch=master)](https://coveralls.io/gitlab/justinlivi/rollback?branch=master)
+[![Coverage Status](https://coveralls.io/repos/gitlab/justinlivi/rollback/badge.svg?branch=master&kill_cache=1)](https://coveralls.io/gitlab/justinlivi/rollback?branch=master)
 [![David](https://img.shields.io/david/justinlivi/rollback.svg)](https://github.com/JustinLivi/rollback/blob/master/package.json)
 [![NPM](https://img.shields.io/npm/l/rollback.svg)](https://www.npmjs.com/package/rollback)
 [![node](https://img.shields.io/node/v/rollback.svg)](https://github.com/JustinLivi/rollback/blob/master/package.json)
@@ -102,12 +102,12 @@ Additionally the following options from [fs-extra's copy](https://github.com/jpr
 
 A `Snapshot` object has the following properties:
 
-| property | type | description |
-|----------|------|-------------|
-| `path` | `string` | the path of the temporary directory |
-| `cleanup` | `() => void` | manually cleans up the temporary directory |
-| `rollback` | `(options?: RollbackOptions) => Promise<void>` | asynchronously rolls back any changes to the snapshot |
-| `rollbackSync` | `(options?: RollbackOptions) => void` | synchronously rolls back any changes to the snapshot |
+| property       | type                                           | description                                           |
+| -------------- | ---------------------------------------------- | ----------------------------------------------------- |
+| `path`         | `string`                                       | the path of the temporary directory                   |
+| `cleanup`      | `() => void`                                   | manually cleans up the temporary directory            |
+| `rollback`     | `(options?: RollbackOptions) => Promise<void>` | asynchronously rolls back any changes to the snapshot |
+| `rollbackSync` | `(options?: RollbackOptions) => void`          | synchronously rolls back any changes to the snapshot  |
 
 `RollbackOptions` takes the following form:
 
