@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: automatic merge owner's PRs on CI success
+    conditions:
+      - status-success~=^ci/gitlab/
+      - author=JustinLivi
+    actions:
+      merge:
+        method: merge
+      delete_head_branch: {}
