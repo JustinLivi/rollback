@@ -58,5 +58,24 @@
     "typedoc": "^0.14.2",
     "typedoc-plugin-markdown": "^1.1.27",
     "typescript": "^3.3.3333"
+  },
+  "greenkeeper": {
+    "commitMessages": {
+      "initialBadge": "Docs: Add Greenkeeper badge",
+      "initialDependencies": "Upgrade: Update dependencies",
+      "initialBranches": "Build: Whitelist greenkeeper branches",
+      "dependencyUpdate": "Upgrade: Update ${dependency} to version ${version}",
+      "devDependencyUpdate": "Upgrade: Update ${dependency} to version ${version}",
+      "dependencyPin": "Fix: Pin ${dependency} to ${oldVersion}",
+      "devDependencyPin": "Fix: Pin ${dependency} to ${oldVersion}"
+    },
+    "prTitles": {
+      "initialPR": "Update dependencies to enable Greenkeeper",
+      "initialPrBadge": "Add badge to enable Greenkeeper",
+      "initialPrBadgeOnly": "Add Greenkeeper badge",
+      "initialSubgroupPR": "Update dependencies for ${group}",
+      "basicPR": "Update ${dependency} to the latest",
+      "groupPR": "Update ${dependency} in group ${group} to the latest"
+    }
   }
 }
