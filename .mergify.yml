@@ -2,7 +2,6 @@ pull_request_rules:
   - name: automatic merge owner's PRs on CI success
     conditions:
       - status-success~=^ci/gitlab/
-      - status-success=Mergify — future config checker
       - author=JustinLivi
     actions:
       merge:
