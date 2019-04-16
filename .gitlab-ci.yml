@@ -84,6 +84,8 @@ release:
     paths:
       - node_modules
   script:
+    - git config user.email "$GITLAB_USER_EMAIL"
+    - git config user.name "Robot Justin"
     - npm install
     - npm run bump
   tags:
