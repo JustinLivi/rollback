@@ -1,8 +1,9 @@
 stages:
   - test
   - cover
+  - release
 
-test_10:
+test:node:10:
   image: node:10
   stage: test
   cache:
@@ -19,7 +20,21 @@ test_10:
     paths:
       - coverage
 
-test_8:
+test:node:9:
+  image: node:9
+  stage: test
+  cache:
+    key: node_modules
+    policy: pull
+    paths:
+      - node_modules
+  script:
+    - npm install
+    - npm test
+  tags:
+    - docker
+
+test:node:8:
   image: node:8
   stage: test
   cache:
@@ -36,8 +51,12 @@ test_8:
 coveralls:
   image: node:10
   dependencies:
-    - test_10
+    - test:node:10
+    - test:node:9
+    - test:node:8
   stage: cover
+  only:
+    - master
   cache:
     key: node_modules
     policy: pull
@@ -51,3 +70,21 @@ coveralls:
   artifacts:
     paths:
       - coverage
+
+release:
+  image: node:10
+  dependencies:
+    - coveralls
+  stage: release
+  only:
+    - master
+  cache:
+    key: node_modules
+    policy: pull
+    paths:
+      - node_modules
+  script:
+    - npm install
+    - npm run bump
+  tags:
+    - docker
