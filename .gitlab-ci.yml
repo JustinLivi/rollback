@@ -90,12 +90,9 @@ release:
     - git remote add upstream "$UPSTREAM"
     - git config user.email "$GITLAB_USER_EMAIL"
     - git config user.name "Justin Livi"
-    - git config credential.https://github.com.JustinLivi JustinLivi
-    - git config credential.helper "!echo $GITHUB_TOKEN"
     - npm run bump
     - git push upstream master
     - git push upstream --tags
-    - git config --unset credential.helper
     - mv .npmrc-deploy .npmrc
     - npm publish
   tags:
