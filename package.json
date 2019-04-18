@@ -14,7 +14,6 @@
     "docs": "typedoc --theme markdown --out docs --readme none",
     "tslint": "tslint -c tslint.json 'src/**/*.ts'",
     "version": "npm run build && npm run docs && conventional-changelog -p eslint -i CHANGELOG.md -s -r 0 && git add -A",
-    "postversion": "mv .npmrc-deploy .npmrc && git push upstream master && git push --tags && npm publish",
     "bump": "npm version --unsafe-perm $(conventional-recommended-bump -p eslint)"
   },
   "repository": {
