@@ -56,7 +56,7 @@ coveralls:
     - test:node:8
   stage: cover
   only:
-    - master
+    - dev
   cache:
     key: node_modules
     policy: pull
@@ -77,13 +77,16 @@ release:
     - coveralls
   stage: release
   only:
-    - master
+    - dev
   cache:
     key: node_modules
     policy: pull
     paths:
       - node_modules
   script:
+    - git checkout master
+    - git merge dev --no-edit
+    - git remote add upstream "$UPSTREAM"
     - git config user.email "$GITLAB_USER_EMAIL"
     - git config user.name "Robot Justin"
     - npm install
