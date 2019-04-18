@@ -85,7 +85,7 @@ release:
       - node_modules
   script:
     - git checkout master
-    - git merge dev --no-edit
+    - git merge origin/dev --no-edit
     - git remote add upstream "$UPSTREAM"
     - git config user.email "$GITLAB_USER_EMAIL"
     - git config user.name "Robot Justin"
