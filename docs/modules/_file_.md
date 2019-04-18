@@ -33,7 +33,7 @@
 
 **Ƭ CopyOptionsFileProps**: *"preserveTimestamps" \| "filter"*
 
-*Defined in [file.ts:9](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L9)*
+*Defined in file.ts:9*
 
 Options exposed from `fs-extra`'s `copy` and `copySync` methods
 
@@ -44,7 +44,7 @@ ___
 
 **Ƭ RollbackFileContext**: *[RollbackFileOptions](_file_.md#rollbackfileoptions) & `object`*
 
-*Defined in [file.ts:57](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L57)*
+*Defined in file.ts:54*
 
 The context necessary for a rollback
 
@@ -59,7 +59,7 @@ ___
 
 **Ƭ RollbackFileOptions**: *`Pick`<`CopyOptions`, [CopyOptionsFileProps](_file_.md#copyoptionsfileprops)>*
 
-*Defined in [file.ts:14](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L14)*
+*Defined in file.ts:14*
 
 Options passed to `rollback` and `rollbackSync`
 
@@ -68,9 +68,9 @@ ___
 
 ###  SnapshotFileOptions
 
-**Ƭ SnapshotFileOptions**: *`TmpOptions` & [RollbackFileOptions](_file_.md#rollbackfileoptions) & `object`*
+**Ƭ SnapshotFileOptions**: *`FileOptions` & [RollbackFileOptions](_file_.md#rollbackfileoptions) & `object`*
 
-*Defined in [file.ts:23](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L23)*
+*Defined in file.ts:20*
 
 Options passed to `snapshot`
 
@@ -81,9 +81,9 @@ ___
 
 ###  SnapshotFileOptionsSync
 
-**Ƭ SnapshotFileOptionsSync**: *`TmpOptions` & `Pick`<`CopyOptionsSync`, [CopyOptionsFileProps](_file_.md#copyoptionsfileprops)> & `object`*
+**Ƭ SnapshotFileOptionsSync**: *`FileOptions` & `Pick`<`CopyOptionsSync`, [CopyOptionsFileProps](_file_.md#copyoptionsfileprops)> & `object`*
 
-*Defined in [file.ts:32](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L32)*
+*Defined in file.ts:29*
 
 Options passed to `snapshotSync`
 
@@ -99,7 +99,7 @@ ___
 
 ▸ **createRollbackFile**(__namedParameters: *`object`*): `(Anonymous function)`
 
-*Defined in [file.ts:66](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L66)*
+*Defined in file.ts:63*
 
 Creates a `rollback` closure
 
@@ -122,7 +122,7 @@ ___
 
 ▸ **createRollbackFileSync**(__namedParameters: *`object`*): `(Anonymous function)`
 
-*Defined in [file.ts:91](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L91)*
+*Defined in file.ts:86*
 
 Creates a `rollbackSync` closure
 
@@ -145,7 +145,7 @@ ___
 
 ▸ **snapshotFile**(__namedParameters: *`object`*): `Promise`<[SnapshotFile](../interfaces/_file_.snapshotfile.md)>
 
-*Defined in [file.ts:113](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L113)*
+*Defined in file.ts:106*
 
 Asynchronously creates a snapshot for a directory. Copies all the contents into a temporary location.
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **snapshotFileSync**(__namedParameters: *`object`*): [SnapshotFile](../interfaces/_file_.snapshotfile.md)
 
-*Defined in [file.ts:143](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L143)*
+*Defined in file.ts:136*
 
 Synchronously creates a snapshot for a directory. Copies all the contents into a temporary location.
 

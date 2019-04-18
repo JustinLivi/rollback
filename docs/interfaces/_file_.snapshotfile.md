@@ -38,7 +38,7 @@ A Snapshot object Use to either rollback to the original contents or cleanup the
 
 **● path**: *`string`*
 
-*Defined in [file.ts:46](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L46)*
+*Defined in file.ts:43*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 ▸ **cleanup**(): `void`
 
-*Defined in [file.ts:47](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L47)*
+*Defined in file.ts:44*
 
 **Returns:** `void`
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **rollback**(options?: *[RollbackFileOptions](../modules/_file_.md#rollbackfileoptions)*): `Promise`<`void`>
 
-*Defined in [file.ts:48](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L48)*
+*Defined in file.ts:45*
 
 **Parameters:**
 
@@ -78,7 +78,7 @@ ___
 
 ▸ **rollbackSync**(options?: *[RollbackFileOptions](../modules/_file_.md#rollbackfileoptions)*): `void`
 
-*Defined in [file.ts:49](https://github.com/JustinLivi/rollback/blob/4a42b27/src/file.ts#L49)*
+*Defined in file.ts:46*
 
 **Parameters:**
 

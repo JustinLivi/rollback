@@ -1,5 +1,5 @@
 import { CopyOptions, CopyOptionsSync } from 'fs-extra';
-import { Options as TmpOptions } from 'tmp';
+import { FileOptions } from 'tmp';
 /**
  * Options exposed from `fs-extra`'s `copy` and `copySync` methods
  */
@@ -12,14 +12,14 @@ export declare type RollbackFileOptions = Pick<CopyOptions, CopyOptionsFileProps
  * Options passed to `snapshot`
  * @property path - a path to the directory to snapshot. Defaults to cwd
  */
-export declare type SnapshotFileOptions = TmpOptions & RollbackFileOptions & {
+export declare type SnapshotFileOptions = FileOptions & RollbackFileOptions & {
     path: string;
 };
 /**
  * Options passed to `snapshotSync`
  * @property path - a path to the directory to snapshot. Defaults to cwd
  */
-export declare type SnapshotFileOptionsSync = TmpOptions & Pick<CopyOptionsSync, CopyOptionsFileProps> & {
+export declare type SnapshotFileOptionsSync = FileOptions & Pick<CopyOptionsSync, CopyOptionsFileProps> & {
     path: string;
 };
 /**
