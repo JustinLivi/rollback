@@ -1,6 +1,6 @@
 {
   "name": "rollback",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Rollback a directory to a prior snapshot",
   "main": "build/index.js",
   "engines": {
@@ -35,31 +35,30 @@
   },
   "homepage": "https://github.com/JustinLivi/rollback#readme",
   "dependencies": {
-    "@types/fs-extra": "^5.0.5",
-    "@types/node": "^11.11.0",
+    "@types/fs-extra": "5.0.5",
+    "@types/node": "11.11.0",
     "@types/tmp": "0.1.0",
-    "fs-extra": "^7.0.1",
-    "tmp-promise": "^1.0.5"
+    "fs-extra": "7.0.1",
+    "tmp-promise": "1.0.5"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.6",
-    "@types/mock-fs": "^3.6.30",
-    "conventional-changelog-cli": "^2.0.12",
-    "conventional-changelog-eslint": "^3.0.1",
-    "conventional-recommended-bump": "^4.1.1",
-    "coveralls": "^3.0.3",
-    "jest": "^24.1.0",
-    "jest-extended": "^0.11.1",
-    "mock-fs": "^4.8.0",
-    "npm": "^6.8.0",
-    "prettier": "^1.16.4",
-    "ts-jest": "^24.0.0",
-    "tslint": "^5.13.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-eslint-rules": "^5.4.0",
-    "typedoc": "^0.14.2",
-    "typedoc-plugin-markdown": "^1.1.27",
-    "typescript": "^3.3.3333"
+    "@types/jest": "24.0.11",
+    "@types/mock-fs": "3.6.30",
+    "conventional-changelog-cli": "2.0.12",
+    "conventional-changelog-eslint": "3.0.1",
+    "conventional-recommended-bump": "4.1.1",
+    "coveralls": "3.0.3",
+    "jest": "24.3.1",
+    "jest-extended": "0.11.1",
+    "mock-fs": "4.8.0",
+    "prettier": "1.16.4",
+    "ts-jest": "24.0.0",
+    "tslint": "5.13.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-eslint-rules": "5.4.0",
+    "typedoc": "0.14.2",
+    "typedoc-plugin-markdown": "1.1.27",
+    "typescript": "3.3.3333"
   },
   "greenkeeper": {
     "commitMessages": {
