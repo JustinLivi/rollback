@@ -2,6 +2,7 @@ stages:
   - test
   - cover
   - release
+  - sync
 
 test:node:10:
   image: node:10
