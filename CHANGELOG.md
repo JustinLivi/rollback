@@ -1,3 +1,20 @@
+## [0.2.3](https://github.com/JustinLivi/rollback/compare/v0.2.2...v0.2.3) (2019-04-27)
+
+
+### Build
+
+* Add sync stage (refs #34) ([dc851abd6e48208e6e2541e4e34e63a95d4d431b](https://github.com/JustinLivi/rollback/commit/dc851abd6e48208e6e2541e4e34e63a95d4d431b)), closes [#34](https://github.com/JustinLivi/rollback/issues/34)
+* Auto sync release to dev (fixes #34) ([daa1f786388a727ab69436b1a621d6991869ed63](https://github.com/JustinLivi/rollback/commit/daa1f786388a727ab69436b1a621d6991869ed63)), closes [#34](https://github.com/JustinLivi/rollback/issues/34)
+
+### Upgrade
+
+* Update @types/node to version 11.13.6 ([863028c42497c744cdbe73175786cbbc042c5651](https://github.com/JustinLivi/rollback/commit/863028c42497c744cdbe73175786cbbc042c5651))
+* Update @types/node to version 11.13.8 ([4f0227bc1047cbed87b36ee0b71d55fd25b4672b](https://github.com/JustinLivi/rollback/commit/4f0227bc1047cbed87b36ee0b71d55fd25b4672b)), closes [#36](https://github.com/JustinLivi/rollback/issues/36)
+* Update conventional-changelog-cli to version 2.0.17 ([d5ccf908f70c702736e6c68a13859d409104c5ad](https://github.com/JustinLivi/rollback/commit/d5ccf908f70c702736e6c68a13859d409104c5ad))
+* Update mock-fs to version 4.9.0 ([7cf83b37ea2ec20222f46dc01a0f57f03b3356cf](https://github.com/JustinLivi/rollback/commit/7cf83b37ea2ec20222f46dc01a0f57f03b3356cf))
+
+
+
 ## [0.2.2](https://github.com/JustinLivi/rollback/compare/v0.2.1...v0.2.2) (2019-04-19)
 
 
