@@ -1,3 +1,8 @@
+## [0.2.4](https://github.com/JustinLivi/rollback/compare/v0.2.3...v0.2.4) (2019-04-27)
+
+
+
+
 ## [0.2.3](https://github.com/JustinLivi/rollback/compare/v0.2.2...v0.2.3) (2019-04-27)
 
 
@@ -5,6 +10,7 @@
 
 * Add sync stage (refs #34) ([dc851abd6e48208e6e2541e4e34e63a95d4d431b](https://github.com/JustinLivi/rollback/commit/dc851abd6e48208e6e2541e4e34e63a95d4d431b)), closes [#34](https://github.com/JustinLivi/rollback/issues/34)
 * Auto sync release to dev (fixes #34) ([daa1f786388a727ab69436b1a621d6991869ed63](https://github.com/JustinLivi/rollback/commit/daa1f786388a727ab69436b1a621d6991869ed63)), closes [#34](https://github.com/JustinLivi/rollback/issues/34)
+* Update greenkeeper messages (fixes #34) ([ee4682907353fc1c0e26be6c30c229a6aa2bb19a](https://github.com/JustinLivi/rollback/commit/ee4682907353fc1c0e26be6c30c229a6aa2bb19a)), closes [#34](https://github.com/JustinLivi/rollback/issues/34)
 
 ### Upgrade
 
