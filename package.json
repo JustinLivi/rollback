@@ -62,13 +62,16 @@
   },
   "greenkeeper": {
     "commitMessages": {
+      "addConfigFile": "Build: Add Greenkeeper config file",
+      "updateConfigFile": "Build: Update Greenkeeper config file",
       "initialBadge": "Docs: Add Greenkeeper badge",
       "initialDependencies": "Upgrade: Update dependencies",
       "initialBranches": "Build: Whitelist greenkeeper branches",
       "dependencyUpdate": "Upgrade: Update ${dependency} to version ${version}",
       "devDependencyUpdate": "Upgrade: Update ${dependency} to version ${version}",
       "dependencyPin": "Fix: Pin ${dependency} to ${oldVersion}",
-      "devDependencyPin": "Fix: Pin ${dependency} to ${oldVersion}"
+      "devDependencyPin": "Fix: Pin ${dependency} to ${oldVersion}",
+      "lockfileUpdate": "Upgrade: Update lockfile ${lockfilePath}"
     },
     "prTitles": {
       "initialPR": "Update dependencies to enable Greenkeeper",
