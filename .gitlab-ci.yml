@@ -2,10 +2,17 @@ stages:
   - test
   - cover
   - release
+  - sync
 
 test:node:10:
   image: node:10
   stage: test
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_BEFORE_SHA =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TAG =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TITLE =~ /^\d+.\d+.\d+$/
   cache:
     key: node_modules
     policy: pull
@@ -23,6 +30,12 @@ test:node:10:
 test:node:9:
   image: node:9
   stage: test
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_BEFORE_SHA =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TAG =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TITLE =~ /^\d+.\d+.\d+$/
   cache:
     key: node_modules
     policy: pull
@@ -37,6 +50,12 @@ test:node:9:
 test:node:8:
   image: node:8
   stage: test
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_BEFORE_SHA =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TAG =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TITLE =~ /^\d+.\d+.\d+$/
   cache:
     key: node_modules
     policy: pull
@@ -55,6 +74,12 @@ coveralls:
     - test:node:9
     - test:node:8
   stage: cover
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_BEFORE_SHA =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TAG =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TITLE =~ /^\d+.\d+.\d+$/
   only:
     - dev
   cache:
@@ -76,24 +101,47 @@ release:
   dependencies:
     - coveralls
   stage: release
+  except:
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_BEFORE_SHA =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TAG =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TITLE =~ /^\d+.\d+.\d+$/
   only:
-    - dev
+    - master
   cache:
     key: node_modules
     policy: pull
     paths:
       - node_modules
   script:
-    - npm install
-    - git checkout master
-    - git merge origin/dev --no-edit
+    - npm ci
     - git remote add upstream "$UPSTREAM"
     - git config user.email "$GITLAB_USER_EMAIL"
-    - git config user.name "Justin Livi"
+    - git config user.name "$GITLAB_USER_NAME"
     - npm run bump
-    - git push upstream master
+    - git push upstream HEAD:master
     - git push upstream --tags
     - mv .npmrc-deploy .npmrc
     - npm publish
   tags:
     - docker
+
+sync:
+  stage: sync
+  only:
+    refs:
+      - master
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_BEFORE_SHA =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TAG =~ /^\d+.\d+.\d+$/
+      - $CI_COMMIT_TITLE =~ /^\d+.\d+.\d+$/
+  script:
+    - git remote add upstream "$UPSTREAM"
+    - git config user.email "$GITLAB_USER_EMAIL"
+    - git config user.name "$GITLAB_USER_NAME"
+    - git checkout dev
+    - git pull --rebase upstream dev
+    - git merge origin/master
+    - git push upstream dev

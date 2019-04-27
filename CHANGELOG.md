@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/JustinLivi/rollback/compare/v0.2.1...v0.2.2) (2019-04-19)
+
+
+### Fix
+
+* Pin version numbers (fixes #29) ([a4f45bf7faea0b516f878ebfd9730c0208b0d6da](https://github.com/JustinLivi/rollback/commit/a4f45bf7faea0b516f878ebfd9730c0208b0d6da)), closes [#29](https://github.com/JustinLivi/rollback/issues/29)
+
+
+
 ## [0.2.1](https://github.com/JustinLivi/rollback/compare/v0.2.0...v0.2.1) (2019-04-18)
 
 
