@@ -1,3 +1,19 @@
+## [0.2.5](https://github.com/JustinLivi/rollback/compare/v0.2.4...v0.2.5) (2019-05-01)
+
+
+### Build
+
+* Add tests for node 11 and 12 ([62b9dfacae98e204607ab9963395de5e296e87ea](https://github.com/JustinLivi/rollback/commit/62b9dfacae98e204607ab9963395de5e296e87ea))
+* Attempt to fix CI not starting ([2db5637ea21addbe6295081f49fd1934443e763c](https://github.com/JustinLivi/rollback/commit/2db5637ea21addbe6295081f49fd1934443e763c))
+* Only report coverage on master ([bf7554de46139893e3ffa48b6cff6bb935c02e2f](https://github.com/JustinLivi/rollback/commit/bf7554de46139893e3ffa48b6cff6bb935c02e2f))
+
+### Upgrade
+
+* Update @types/jest to version 24.0.12 ([51473d6c8e610c755589be78ab79a68b525345f7](https://github.com/JustinLivi/rollback/commit/51473d6c8e610c755589be78ab79a68b525345f7))
+* Update lockfile package-lock.json ([3f64f51347a51fcd531ec708762ceb8799a0aee9](https://github.com/JustinLivi/rollback/commit/3f64f51347a51fcd531ec708762ceb8799a0aee9))
+
+
+
 ## [0.2.4](https://github.com/JustinLivi/rollback/compare/v0.2.3...v0.2.4) (2019-04-27)
 
 
