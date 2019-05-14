@@ -42,7 +42,7 @@
     "tmp-promise": "1.1.0"
   },
   "devDependencies": {
-    "@types/jest": "24.0.12",
+    "@types/jest": "24.0.13",
     "@types/mock-fs": "3.6.30",
     "conventional-changelog-cli": "2.0.21",
     "conventional-changelog-eslint": "3.0.1",
