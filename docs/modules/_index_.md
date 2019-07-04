@@ -1,8 +1,5 @@
-[rollback](../README.md) > ["index"](../modules/_index_.md)
+> **[rollback](../README.md)**
+
+[Globals](../README.md) / ["index"](_index_.md) /
 
 # External module: "index"
-
-## Index
-
----
-

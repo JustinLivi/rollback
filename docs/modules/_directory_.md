@@ -1,14 +1,16 @@
-[rollback](../README.md) > ["directory"](../modules/_directory_.md)
+> **[rollback](../README.md)**
+
+[Globals](../README.md) / ["directory"](_directory_.md) /
 
 # External module: "directory"
 
-## Index
+### Index
 
-### Interfaces
+#### Interfaces
 
 * [Snapshot](../interfaces/_directory_.snapshot.md)
 
-### Type aliases
+#### Type aliases
 
 * [CopyOptionsProps](_directory_.md#copyoptionsprops)
 * [RollbackContext](_directory_.md#rollbackcontext)
@@ -16,179 +18,163 @@
 * [SnapshotOptions](_directory_.md#snapshotoptions)
 * [SnapshotOptionsSync](_directory_.md#snapshotoptionssync)
 
-### Functions
+#### Functions
 
-* [createRollback](_directory_.md#createrollback)
-* [createRollbackSync](_directory_.md#createrollbacksync)
-* [snapshot](_directory_.md#snapshot-1)
-* [snapshotSync](_directory_.md#snapshotsync)
-
----
+* [createRollback](_directory_.md#const-createrollback)
+* [createRollbackSync](_directory_.md#const-createrollbacksync)
+* [snapshot](_directory_.md#const-snapshot)
+* [snapshotSync](_directory_.md#const-snapshotsync)
 
 ## Type aliases
 
-<a id="copyoptionsprops"></a>
-
 ###  CopyOptionsProps
 
-**Ƭ CopyOptionsProps**: *"preserveTimestamps" \| "filter" \| "recursive"*
+Ƭ **CopyOptionsProps**: *"preserveTimestamps" | "filter" | "recursive"*
 
-*Defined in directory.ts:19*
+Defined in directory.ts:19
 
 Options exposed from `fs-extra`'s `copy` and `copySync` methods
 
 ___
-<a id="rollbackcontext"></a>
 
 ###  RollbackContext
 
-**Ƭ RollbackContext**: *[RollbackOptions](_directory_.md#rollbackoptions) & `object`*
+Ƭ **RollbackContext**: *[RollbackOptions](_directory_.md#rollbackoptions) & object*
 
-*Defined in directory.ts:67*
+Defined in directory.ts:67
 
 The context necessary for a rollback
 
-*__property__*: src the target source
+**`property`** src the target source
 
-*__property__*: dest the temporary copy
+**`property`** dest the temporary copy
 
 ___
-<a id="rollbackoptions"></a>
 
 ###  RollbackOptions
 
-**Ƭ RollbackOptions**: *`Pick`<`CopyOptions`, "preserveTimestamps" \| "recursive">*
+Ƭ **RollbackOptions**: *`Pick<CopyOptions, "preserveTimestamps" | "recursive">`*
 
-*Defined in directory.ts:42*
+Defined in directory.ts:42
 
 Options passed to `rollback` and `rollbackSync`
 
 ___
-<a id="snapshotoptions"></a>
 
 ###  SnapshotOptions
 
-**Ƭ SnapshotOptions**: *`DirOptions` & `Pick`<`CopyOptions`, [CopyOptionsProps](_directory_.md#copyoptionsprops)> & `object`*
+Ƭ **SnapshotOptions**: *`DirOptions` & `Pick<CopyOptions, CopyOptionsProps>` & object*
 
-*Defined in directory.ts:25*
+Defined in directory.ts:25
 
 Options passed to `snapshot`
 
-*__property__*: path - a path to the directory to snapshot. Defaults to cwd
+**`property`** path - a path to the directory to snapshot. Defaults to cwd
 
 ___
-<a id="snapshotoptionssync"></a>
 
 ###  SnapshotOptionsSync
 
-**Ƭ SnapshotOptionsSync**: *`DirOptions` & `Pick`<`CopyOptionsSync`, [CopyOptionsProps](_directory_.md#copyoptionsprops)> & `object`*
+Ƭ **SnapshotOptionsSync**: *`DirOptions` & `Pick<CopyOptionsSync, CopyOptionsProps>` & object*
 
-*Defined in directory.ts:34*
+Defined in directory.ts:34
 
 Options passed to `snapshotSync`
 
-*__property__*: path - a path to the directory to snapshot. Defaults to cwd
-
-___
+**`property`** path - a path to the directory to snapshot. Defaults to cwd
 
 ## Functions
 
-<a id="createrollback"></a>
+### `Const` createRollback
 
-### `<Const>` createRollback
+▸ **createRollback**(`__namedParameters`: object): *`(Anonymous function)`*
 
-▸ **createRollback**(__namedParameters: *`object`*): `(Anonymous function)`
-
-*Defined in directory.ts:76*
+Defined in directory.ts:76
 
 Creates a `rollback` closure
 
 **Parameters:**
 
-**__namedParameters: `object`**
+▪ **__namedParameters**: *object*
 
-| Name | Type |
-| ------ | ------ |
-| dest | `string` |
-| preserveTimestampsDefault | `undefined` \| `false` \| `true` |
-| recursiveDefault | `undefined` \| `false` \| `true` |
-| src | `string` |
+Name | Type |
+------ | ------ |
+`dest` | string |
+`preserveTimestampsDefault` | undefined \| false \| true |
+`recursiveDefault` | undefined \| false \| true |
+`src` | string |
 
-**Returns:** `(Anonymous function)`
+**Returns:** *`(Anonymous function)`*
 
 ___
-<a id="createrollbacksync"></a>
 
-### `<Const>` createRollbackSync
+### `Const` createRollbackSync
 
-▸ **createRollbackSync**(__namedParameters: *`object`*): `(Anonymous function)`
+▸ **createRollbackSync**(`__namedParameters`: object): *`(Anonymous function)`*
 
-*Defined in directory.ts:105*
+Defined in directory.ts:105
 
 Creates a `rollbackSync` closure
 
 **Parameters:**
 
-**__namedParameters: `object`**
+▪ **__namedParameters**: *object*
 
-| Name | Type |
-| ------ | ------ |
-| dest | `string` |
-| preserveTimestampsDefault | `undefined` \| `false` \| `true` |
-| recursiveDefault | `undefined` \| `false` \| `true` |
-| src | `string` |
+Name | Type |
+------ | ------ |
+`dest` | string |
+`preserveTimestampsDefault` | undefined \| false \| true |
+`recursiveDefault` | undefined \| false \| true |
+`src` | string |
 
-**Returns:** `(Anonymous function)`
+**Returns:** *`(Anonymous function)`*
 
 ___
-<a id="snapshot-1"></a>
 
-### `<Const>` snapshot
+### `Const` snapshot
 
-▸ **snapshot**(__namedParameters: *`object`*): `Promise`<[Snapshot](../interfaces/_directory_.snapshot.md)>
+▸ **snapshot**(`__namedParameters`: object): *`Promise<Snapshot>`*
 
-*Defined in directory.ts:131*
+Defined in directory.ts:131
 
-Asynchronously creates a snapshot for a directory. Copies all the contents into a temporary location.
+Asynchronously creates a snapshot for a directory.
+Copies all the contents into a temporary location.
 
 **Parameters:**
 
-**__namedParameters: `object`**
+▪ **__namedParameters**: *object*
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| filter | `undefined` \| `function` \| `function` | - |
-| preserveTimestamps | `boolean` | false |
-| recursive | `boolean` | true |
-| src | `string` | - |
-| tmpOptions | [tmpOptions]() | - |
+Name | Type | Default |
+------ | ------ | ------ |
+`filter` | undefined \| function \| function | - |
+`preserveTimestamps` | boolean | false |
+`recursive` | boolean | true |
+`src` | string | - |
+`tmpOptions` | [tmpOptions]() | - |
 
-**Returns:** `Promise`<[Snapshot](../interfaces/_directory_.snapshot.md)>
+**Returns:** *`Promise<Snapshot>`*
 
 ___
-<a id="snapshotsync"></a>
 
-### `<Const>` snapshotSync
+### `Const` snapshotSync
 
-▸ **snapshotSync**(__namedParameters: *`object`*): [Snapshot](../interfaces/_directory_.snapshot.md)
+▸ **snapshotSync**(`__namedParameters`: object): *[Snapshot](../interfaces/_directory_.snapshot.md)*
 
-*Defined in directory.ts:163*
+Defined in directory.ts:163
 
-Synchronously creates a snapshot for a directory. Copies all the contents into a temporary location.
+Synchronously creates a snapshot for a directory.
+Copies all the contents into a temporary location.
 
 **Parameters:**
 
-**__namedParameters: `object`**
+▪ **__namedParameters**: *object*
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| filter | `undefined` \| `function` | - |
-| preserveTimestamps | `boolean` | false |
-| recursive | `boolean` | true |
-| src | `string` | - |
-| tmpOptions | [tmpOptions]() | - |
+Name | Type | Default |
+------ | ------ | ------ |
+`filter` | undefined \| function | - |
+`preserveTimestamps` | boolean | false |
+`recursive` | boolean | true |
+`src` | string | - |
+`tmpOptions` | [tmpOptions]() | - |
 
-**Returns:** [Snapshot](../interfaces/_directory_.snapshot.md)
-
-___
-
+**Returns:** *[Snapshot](../interfaces/_directory_.snapshot.md)*
