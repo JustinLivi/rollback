@@ -1,3 +1,13 @@
+## [0.2.7](https://github.com/JustinLivi/rollback/compare/v0.2.6...v0.2.7) (2019-07-04)
+
+
+### Upgrade
+
+* Update lockfile package-lock.json ([799865c97313da1961f606af6f6359dea4972494](https://github.com/JustinLivi/rollback/commit/799865c97313da1961f606af6f6359dea4972494))
+* Update tmp-promise to version 2.0.2 ([e1387ad76a1e72f274d448bcebac4fa7f56bac7c](https://github.com/JustinLivi/rollback/commit/e1387ad76a1e72f274d448bcebac4fa7f56bac7c))
+
+
+
 ## [0.2.6](https://github.com/JustinLivi/rollback/compare/v0.2.5...v0.2.6) (2019-07-04)
 
 
