@@ -1,3 +1,15 @@
+## [0.2.8](https://github.com/JustinLivi/rollback/compare/v0.2.7...v0.2.8) (2019-07-11)
+
+
+### Upgrade
+
+* Update @types/node to version 12.6.2 ([18856f6ef677e2ff316f848cfaf45e7ffe552437](https://github.com/JustinLivi/rollback/commit/18856f6ef677e2ff316f848cfaf45e7ffe552437)), closes [#74](https://github.com/JustinLivi/rollback/issues/74)
+* Update jest-extended to version 0.11.2 ([326209b1821e983504131e2e271e05d330c1ab96](https://github.com/JustinLivi/rollback/commit/326209b1821e983504131e2e271e05d330c1ab96))
+* Update lockfile package-lock.json ([269ff41ad9d2fb2ab30af7aaa8603d8cd6676818](https://github.com/JustinLivi/rollback/commit/269ff41ad9d2fb2ab30af7aaa8603d8cd6676818))
+* Update lockfile package-lock.json ([44827c74d3e645eb0c1f99dd2feda2f053c7a15a](https://github.com/JustinLivi/rollback/commit/44827c74d3e645eb0c1f99dd2feda2f053c7a15a))
+
+
+
 ## [0.2.7](https://github.com/JustinLivi/rollback/compare/v0.2.6...v0.2.7) (2019-07-04)
 
 
