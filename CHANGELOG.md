@@ -1,3 +1,17 @@
+## [0.2.9](https://github.com/JustinLivi/rollback/compare/v0.2.8...v0.2.9) (2019-07-17)
+
+
+### Upgrade
+
+* Update @types/node to version 12.6.6 ([e793809aea0df59a1b0c198ff8af6a0727fe2c47](https://github.com/JustinLivi/rollback/commit/e793809aea0df59a1b0c198ff8af6a0727fe2c47)), closes [#79](https://github.com/JustinLivi/rollback/issues/79)
+* Update coveralls to version 3.0.5 ([e6b71db14a2ffb6780fc4015f9ba865bfacc315c](https://github.com/JustinLivi/rollback/commit/e6b71db14a2ffb6780fc4015f9ba865bfacc315c))
+* Update lockfile package-lock.json ([1e2db75549c074bfdf22e43f5a77e46930d1edac](https://github.com/JustinLivi/rollback/commit/1e2db75549c074bfdf22e43f5a77e46930d1edac))
+* Update lockfile package-lock.json ([b4573962c00d1be06af9f1308590b7aae83f8d82](https://github.com/JustinLivi/rollback/commit/b4573962c00d1be06af9f1308590b7aae83f8d82))
+* Update lockfile package-lock.json ([4b1c8b595e81e2dbf1756f4b17c8f171901204d9](https://github.com/JustinLivi/rollback/commit/4b1c8b595e81e2dbf1756f4b17c8f171901204d9))
+* Update typedoc-plugin-markdown to version 2.0.9 ([f734c940a1166136ef206af1842a8b0d3107725a](https://github.com/JustinLivi/rollback/commit/f734c940a1166136ef206af1842a8b0d3107725a))
+
+
+
 ## [0.2.8](https://github.com/JustinLivi/rollback/compare/v0.2.7...v0.2.8) (2019-07-11)
 
 
