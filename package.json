@@ -46,7 +46,7 @@
     "@types/jest": "24.0.15",
     "@types/mock-fs": "3.6.30",
     "conventional-changelog-cli": "2.0.21",
-    "conventional-changelog-eslint": "3.0.1",
+    "conventional-changelog-eslint": "3.0.4",
     "conventional-recommended-bump": "5.0.0",
     "coveralls": "3.0.5",
     "jest": "24.3.1",
