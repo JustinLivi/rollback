@@ -31,7 +31,7 @@
 
 Ƭ **CopyOptionsFileProps**: *"preserveTimestamps" | "filter"*
 
-Defined in file.ts:9
+Defined in src/file.ts:9
 
 Options exposed from `fs-extra`'s `copy` and `copySync` methods
 
@@ -41,7 +41,7 @@ ___
 
 Ƭ **RollbackFileContext**: *[RollbackFileOptions](_file_.md#rollbackfileoptions) & object*
 
-Defined in file.ts:54
+Defined in src/file.ts:54
 
 The context necessary for a rollback
 
@@ -55,7 +55,7 @@ ___
 
 Ƭ **RollbackFileOptions**: *`Pick<CopyOptions, CopyOptionsFileProps>`*
 
-Defined in file.ts:14
+Defined in src/file.ts:14
 
 Options passed to `rollback` and `rollbackSync`
 
@@ -65,7 +65,7 @@ ___
 
 Ƭ **SnapshotFileOptions**: *`FileOptions` & [RollbackFileOptions](_file_.md#rollbackfileoptions) & object*
 
-Defined in file.ts:20
+Defined in src/file.ts:20
 
 Options passed to `snapshot`
 
@@ -77,7 +77,7 @@ ___
 
 Ƭ **SnapshotFileOptionsSync**: *`FileOptions` & `Pick<CopyOptionsSync, CopyOptionsFileProps>` & object*
 
-Defined in file.ts:29
+Defined in src/file.ts:29
 
 Options passed to `snapshotSync`
 
@@ -89,7 +89,7 @@ Options passed to `snapshotSync`
 
 ▸ **createRollbackFile**(`__namedParameters`: object): *`(Anonymous function)`*
 
-Defined in file.ts:63
+Defined in src/file.ts:63
 
 Creates a `rollback` closure
 
@@ -111,7 +111,7 @@ ___
 
 ▸ **createRollbackFileSync**(`__namedParameters`: object): *`(Anonymous function)`*
 
-Defined in file.ts:86
+Defined in src/file.ts:86
 
 Creates a `rollbackSync` closure
 
@@ -133,7 +133,7 @@ ___
 
 ▸ **snapshotFile**(`__namedParameters`: object): *`Promise<SnapshotFile>`*
 
-Defined in file.ts:106
+Defined in src/file.ts:106
 
 Asynchronously creates a snapshot for a directory.
 Copies all the contents into a temporary location.
@@ -157,7 +157,7 @@ ___
 
 ▸ **snapshotFileSync**(`__namedParameters`: object): *[SnapshotFile](../interfaces/_file_.snapshotfile.md)*
 
-Defined in file.ts:136
+Defined in src/file.ts:136
 
 Synchronously creates a snapshot for a directory.
 Copies all the contents into a temporary location.
