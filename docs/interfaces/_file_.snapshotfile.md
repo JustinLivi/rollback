@@ -37,7 +37,7 @@ Use to either rollback to the original contents or cleanup the temp dir
 
 • **path**: *string*
 
-Defined in file.ts:43
+Defined in src/file.ts:43
 
 ## Methods
 
@@ -45,7 +45,7 @@ Defined in file.ts:43
 
 ▸ **cleanup**(): *void*
 
-Defined in file.ts:44
+Defined in src/file.ts:44
 
 **Returns:** *void*
 
@@ -55,7 +55,7 @@ ___
 
 ▸ **rollback**(`options?`: [RollbackFileOptions](../modules/_file_.md#rollbackfileoptions)): *`Promise<void>`*
 
-Defined in file.ts:45
+Defined in src/file.ts:45
 
 **Parameters:**
 
@@ -71,7 +71,7 @@ ___
 
 ▸ **rollbackSync**(`options?`: [RollbackFileOptions](../modules/_file_.md#rollbackfileoptions)): *void*
 
-Defined in file.ts:46
+Defined in src/file.ts:46
 
 **Parameters:**
 

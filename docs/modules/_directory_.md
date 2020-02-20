@@ -31,7 +31,7 @@
 
 Ƭ **CopyOptionsProps**: *"preserveTimestamps" | "filter" | "recursive"*
 
-Defined in directory.ts:19
+Defined in src/directory.ts:19
 
 Options exposed from `fs-extra`'s `copy` and `copySync` methods
 
@@ -41,7 +41,7 @@ ___
 
 Ƭ **RollbackContext**: *[RollbackOptions](_directory_.md#rollbackoptions) & object*
 
-Defined in directory.ts:67
+Defined in src/directory.ts:67
 
 The context necessary for a rollback
 
@@ -55,7 +55,7 @@ ___
 
 Ƭ **RollbackOptions**: *`Pick<CopyOptions, "preserveTimestamps" | "recursive">`*
 
-Defined in directory.ts:42
+Defined in src/directory.ts:42
 
 Options passed to `rollback` and `rollbackSync`
 
@@ -65,7 +65,7 @@ ___
 
 Ƭ **SnapshotOptions**: *`DirOptions` & `Pick<CopyOptions, CopyOptionsProps>` & object*
 
-Defined in directory.ts:25
+Defined in src/directory.ts:25
 
 Options passed to `snapshot`
 
@@ -77,7 +77,7 @@ ___
 
 Ƭ **SnapshotOptionsSync**: *`DirOptions` & `Pick<CopyOptionsSync, CopyOptionsProps>` & object*
 
-Defined in directory.ts:34
+Defined in src/directory.ts:34
 
 Options passed to `snapshotSync`
 
@@ -89,7 +89,7 @@ Options passed to `snapshotSync`
 
 ▸ **createRollback**(`__namedParameters`: object): *`(Anonymous function)`*
 
-Defined in directory.ts:76
+Defined in src/directory.ts:76
 
 Creates a `rollback` closure
 
@@ -112,7 +112,7 @@ ___
 
 ▸ **createRollbackSync**(`__namedParameters`: object): *`(Anonymous function)`*
 
-Defined in directory.ts:105
+Defined in src/directory.ts:105
 
 Creates a `rollbackSync` closure
 
@@ -135,7 +135,7 @@ ___
 
 ▸ **snapshot**(`__namedParameters`: object): *`Promise<Snapshot>`*
 
-Defined in directory.ts:131
+Defined in src/directory.ts:131
 
 Asynchronously creates a snapshot for a directory.
 Copies all the contents into a temporary location.
@@ -160,7 +160,7 @@ ___
 
 ▸ **snapshotSync**(`__namedParameters`: object): *[Snapshot](../interfaces/_directory_.snapshot.md)*
 
-Defined in directory.ts:163
+Defined in src/directory.ts:163
 
 Synchronously creates a snapshot for a directory.
 Copies all the contents into a temporary location.
