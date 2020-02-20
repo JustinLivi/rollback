@@ -1,3 +1,29 @@
+## [0.2.10](https://github.com/JustinLivi/rollback/compare/v0.2.9...v0.2.10) (2020-02-13)
+
+
+### Upgrade
+
+* Update @types/jest to version 24.0.16 ([5faf70677b0d46f2c035564c096ade9c5a98c721](https://github.com/JustinLivi/rollback/commit/5faf70677b0d46f2c035564c096ade9c5a98c721))
+* Update @types/node to version 12.6.7 ([e922f044c531769c6e7d47c6e36f1232447b6675](https://github.com/JustinLivi/rollback/commit/e922f044c531769c6e7d47c6e36f1232447b6675))
+* Update conventional-changelog-cli to version 2.0.23 ([e45808024bce3f0a51567bbea58e37f3b47c9933](https://github.com/JustinLivi/rollback/commit/e45808024bce3f0a51567bbea58e37f3b47c9933))
+* Update coveralls to version 3.0.6 ([4cf95c199fb9b25703fcf9d0f622bc0602989e51](https://github.com/JustinLivi/rollback/commit/4cf95c199fb9b25703fcf9d0f622bc0602989e51))
+* Update jest-extended to version 0.11.5 ([05043eac976b2263ba769d8e43bc5507b3d134bc](https://github.com/JustinLivi/rollback/commit/05043eac976b2263ba769d8e43bc5507b3d134bc))
+* Update lockfile package-lock.json ([1db98a33c1956e93abcb937111775da049fbc25f](https://github.com/JustinLivi/rollback/commit/1db98a33c1956e93abcb937111775da049fbc25f))
+* Update lockfile package-lock.json ([f99d4738ab9edee164173461ad156a85dc79fc8d](https://github.com/JustinLivi/rollback/commit/f99d4738ab9edee164173461ad156a85dc79fc8d))
+* Update lockfile package-lock.json ([9fb79ae7bdac4ddbeb9e6c9f8b65870d67cf728c](https://github.com/JustinLivi/rollback/commit/9fb79ae7bdac4ddbeb9e6c9f8b65870d67cf728c))
+* Update lockfile package-lock.json ([cd990f605eb62b4fdeedde5da2bf727abc3503b4](https://github.com/JustinLivi/rollback/commit/cd990f605eb62b4fdeedde5da2bf727abc3503b4))
+* Update lockfile package-lock.json ([d581db9d9b4b53032a53b92de65ce19db9be2fe0](https://github.com/JustinLivi/rollback/commit/d581db9d9b4b53032a53b92de65ce19db9be2fe0))
+* Update lockfile package-lock.json ([1e0590b6baa4f2131c8730c354b373347058347f](https://github.com/JustinLivi/rollback/commit/1e0590b6baa4f2131c8730c354b373347058347f))
+* Update lockfile package-lock.json ([c24ef5a05104384cc390fdfb6321588221e2af5e](https://github.com/JustinLivi/rollback/commit/c24ef5a05104384cc390fdfb6321588221e2af5e))
+* Update lockfile package-lock.json ([af505fc5f97a2e8b58ef417bfd21f886b179b715](https://github.com/JustinLivi/rollback/commit/af505fc5f97a2e8b58ef417bfd21f886b179b715))
+* Update lockfile package-lock.json ([88011cf622d77b8b25046723af89802ab6c8175e](https://github.com/JustinLivi/rollback/commit/88011cf622d77b8b25046723af89802ab6c8175e))
+* Update ts-jest to version 24.1.0 ([c6ff0e2e03807aba035742873da439926b0673d9](https://github.com/JustinLivi/rollback/commit/c6ff0e2e03807aba035742873da439926b0673d9))
+* Update typedoc to version 0.15.0 ([8368b9bf84904e9301f8d597c4bbb3a9bf97a841](https://github.com/JustinLivi/rollback/commit/8368b9bf84904e9301f8d597c4bbb3a9bf97a841))
+* Update typedoc to version 0.16.0 ([716e803c81209cc2585145372d65c3a3f8a489e0](https://github.com/JustinLivi/rollback/commit/716e803c81209cc2585145372d65c3a3f8a489e0))
+* Update typedoc to version 0.16.9 ([8e794077cc40d9ae1415537ec025fd54f066a3c8](https://github.com/JustinLivi/rollback/commit/8e794077cc40d9ae1415537ec025fd54f066a3c8))
+
+
+
 ## [0.2.9](https://github.com/JustinLivi/rollback/compare/v0.2.8...v0.2.9) (2019-07-17)
 
 
