@@ -1,16 +1,14 @@
-> **[rollback](../README.md)**
-
-[Globals](../README.md) / ["file"](_file_.md) /
+[rollback](../README.md) › ["file"](_file_.md)
 
 # External module: "file"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [SnapshotFile](../interfaces/_file_.snapshotfile.md)
 
-#### Type aliases
+### Type aliases
 
 * [CopyOptionsFileProps](_file_.md#copyoptionsfileprops)
 * [RollbackFileContext](_file_.md#rollbackfilecontext)
@@ -18,7 +16,7 @@
 * [SnapshotFileOptions](_file_.md#snapshotfileoptions)
 * [SnapshotFileOptionsSync](_file_.md#snapshotfileoptionssync)
 
-#### Functions
+### Functions
 
 * [createRollbackFile](_file_.md#const-createrollbackfile)
 * [createRollbackFileSync](_file_.md#const-createrollbackfilesync)
@@ -53,7 +51,7 @@ ___
 
 ###  RollbackFileOptions
 
-Ƭ **RollbackFileOptions**: *`Pick<CopyOptions, CopyOptionsFileProps>`*
+Ƭ **RollbackFileOptions**: *Pick‹CopyOptions, [CopyOptionsFileProps](_file_.md#copyoptionsfileprops)›*
 
 Defined in src/file.ts:14
 
@@ -63,7 +61,7 @@ ___
 
 ###  SnapshotFileOptions
 
-Ƭ **SnapshotFileOptions**: *`FileOptions` & [RollbackFileOptions](_file_.md#rollbackfileoptions) & object*
+Ƭ **SnapshotFileOptions**: *FileOptions & [RollbackFileOptions](_file_.md#rollbackfileoptions) & object*
 
 Defined in src/file.ts:20
 
@@ -75,7 +73,7 @@ ___
 
 ###  SnapshotFileOptionsSync
 
-Ƭ **SnapshotFileOptionsSync**: *`FileOptions` & `Pick<CopyOptionsSync, CopyOptionsFileProps>` & object*
+Ƭ **SnapshotFileOptionsSync**: *FileOptions & Pick‹CopyOptionsSync, [CopyOptionsFileProps](_file_.md#copyoptionsfileprops)› & object*
 
 Defined in src/file.ts:29
 
@@ -87,7 +85,7 @@ Options passed to `snapshotSync`
 
 ### `Const` createRollbackFile
 
-▸ **createRollbackFile**(`__namedParameters`: object): *`(Anonymous function)`*
+▸ **createRollbackFile**(`__namedParameters`: object): *(Anonymous function)*
 
 Defined in src/file.ts:63
 
@@ -100,16 +98,16 @@ Creates a `rollback` closure
 Name | Type |
 ------ | ------ |
 `dest` | string |
-`preserveTimestampsDefault` | undefined \| false \| true |
+`preserveTimestampsDefault` | undefined &#124; false &#124; true |
 `src` | string |
 
-**Returns:** *`(Anonymous function)`*
+**Returns:** *(Anonymous function)*
 
 ___
 
 ### `Const` createRollbackFileSync
 
-▸ **createRollbackFileSync**(`__namedParameters`: object): *`(Anonymous function)`*
+▸ **createRollbackFileSync**(`__namedParameters`: object): *(Anonymous function)*
 
 Defined in src/file.ts:86
 
@@ -122,16 +120,16 @@ Creates a `rollbackSync` closure
 Name | Type |
 ------ | ------ |
 `dest` | string |
-`preserveTimestampsDefault` | undefined \| false \| true |
+`preserveTimestampsDefault` | undefined &#124; false &#124; true |
 `src` | string |
 
-**Returns:** *`(Anonymous function)`*
+**Returns:** *(Anonymous function)*
 
 ___
 
 ### `Const` snapshotFile
 
-▸ **snapshotFile**(`__namedParameters`: object): *`Promise<SnapshotFile>`*
+▸ **snapshotFile**(`__namedParameters`: object): *Promise‹[SnapshotFile](../interfaces/_file_.snapshotfile.md)›*
 
 Defined in src/file.ts:106
 
@@ -144,12 +142,12 @@ Copies all the contents into a temporary location.
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`filter` | undefined \| function \| function | - |
+`filter` | undefined &#124; function &#124; function | - |
 `preserveTimestamps` | boolean | false |
 `src` | string | - |
-`tmpOptions` | [tmpOptions]() | - |
+`tmpOptions` | tmpOptions | - |
 
-**Returns:** *`Promise<SnapshotFile>`*
+**Returns:** *Promise‹[SnapshotFile](../interfaces/_file_.snapshotfile.md)›*
 
 ___
 
@@ -168,9 +166,9 @@ Copies all the contents into a temporary location.
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`filter` | undefined \| function | - |
+`filter` | undefined &#124; function | - |
 `preserveTimestamps` | boolean | false |
 `src` | string | - |
-`tmpOptions` | [tmpOptions]() | - |
+`tmpOptions` | tmpOptions | - |
 
 **Returns:** *[SnapshotFile](../interfaces/_file_.snapshotfile.md)*

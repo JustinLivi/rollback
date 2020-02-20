@@ -1,6 +1,4 @@
-> **[rollback](../README.md)**
-
-[Globals](../README.md) / ["file"](../modules/_file_.md) / [SnapshotFile](_file_.snapshotfile.md) /
+[rollback](../README.md) › ["file"](../modules/_file_.md) › [SnapshotFile](_file_.snapshotfile.md)
 
 # Interface: SnapshotFile
 
@@ -19,13 +17,13 @@ Use to either rollback to the original contents or cleanup the temp dir
 
 * **SnapshotFile**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [path](_file_.snapshotfile.md#path)
 
-#### Methods
+### Methods
 
 * [cleanup](_file_.snapshotfile.md#cleanup)
 * [rollback](_file_.snapshotfile.md#rollback)
@@ -53,7 +51,7 @@ ___
 
 ###  rollback
 
-▸ **rollback**(`options?`: [RollbackFileOptions](../modules/_file_.md#rollbackfileoptions)): *`Promise<void>`*
+▸ **rollback**(`options?`: [RollbackFileOptions](../modules/_file_.md#rollbackfileoptions)): *Promise‹void›*
 
 Defined in src/file.ts:45
 
@@ -63,7 +61,7 @@ Name | Type |
 ------ | ------ |
 `options?` | [RollbackFileOptions](../modules/_file_.md#rollbackfileoptions) |
 
-**Returns:** *`Promise<void>`*
+**Returns:** *Promise‹void›*
 
 ___
 

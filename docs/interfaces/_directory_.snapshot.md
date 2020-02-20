@@ -1,6 +1,4 @@
-> **[rollback](../README.md)**
-
-[Globals](../README.md) / ["directory"](../modules/_directory_.md) / [Snapshot](_directory_.snapshot.md) /
+[rollback](../README.md) › ["directory"](../modules/_directory_.md) › [Snapshot](_directory_.snapshot.md)
 
 # Interface: Snapshot
 
@@ -19,13 +17,13 @@ Use to either rollback to the original contents or cleanup the temp dir
 
 * **Snapshot**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [path](_directory_.snapshot.md#path)
 
-#### Methods
+### Methods
 
 * [cleanup](_directory_.snapshot.md#cleanup)
 * [rollback](_directory_.snapshot.md#rollback)
@@ -53,7 +51,7 @@ ___
 
 ###  rollback
 
-▸ **rollback**(`options?`: [RollbackOptions](../modules/_directory_.md#rollbackoptions)): *`Promise<void>`*
+▸ **rollback**(`options?`: [RollbackOptions](../modules/_directory_.md#rollbackoptions)): *Promise‹void›*
 
 Defined in src/directory.ts:58
 
@@ -63,7 +61,7 @@ Name | Type |
 ------ | ------ |
 `options?` | [RollbackOptions](../modules/_directory_.md#rollbackoptions) |
 
-**Returns:** *`Promise<void>`*
+**Returns:** *Promise‹void›*
 
 ___
 

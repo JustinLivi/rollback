@@ -1,10 +1,10 @@
-> **[rollback](README.md)**
+[rollback](README.md)
 
-[Globals](README.md) /
+# rollback
 
-### Index
+## Index
 
-#### External modules
+### External modules
 
 * ["directory"](modules/_directory_.md)
 * ["file"](modules/_file_.md)

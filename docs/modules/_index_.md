@@ -1,12 +1,10 @@
-> **[rollback](../README.md)**
-
-[Globals](../README.md) / ["index"](_index_.md) /
+[rollback](../README.md) › ["index"](_index_.md)
 
 # External module: "index"
 
-### Index
+## Index
 
-#### References
+### References
 
 * [CopyOptionsFileProps](_index_.md#copyoptionsfileprops)
 * [CopyOptionsProps](_index_.md#copyoptionsprops)

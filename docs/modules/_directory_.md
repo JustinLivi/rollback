@@ -1,16 +1,14 @@
-> **[rollback](../README.md)**
-
-[Globals](../README.md) / ["directory"](_directory_.md) /
+[rollback](../README.md) › ["directory"](_directory_.md)
 
 # External module: "directory"
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [Snapshot](../interfaces/_directory_.snapshot.md)
 
-#### Type aliases
+### Type aliases
 
 * [CopyOptionsProps](_directory_.md#copyoptionsprops)
 * [RollbackContext](_directory_.md#rollbackcontext)
@@ -18,7 +16,7 @@
 * [SnapshotOptions](_directory_.md#snapshotoptions)
 * [SnapshotOptionsSync](_directory_.md#snapshotoptionssync)
 
-#### Functions
+### Functions
 
 * [createRollback](_directory_.md#const-createrollback)
 * [createRollbackSync](_directory_.md#const-createrollbacksync)
@@ -53,7 +51,7 @@ ___
 
 ###  RollbackOptions
 
-Ƭ **RollbackOptions**: *`Pick<CopyOptions, "preserveTimestamps" | "recursive">`*
+Ƭ **RollbackOptions**: *Pick‹CopyOptions, "preserveTimestamps" | "recursive"›*
 
 Defined in src/directory.ts:42
 
@@ -63,7 +61,7 @@ ___
 
 ###  SnapshotOptions
 
-Ƭ **SnapshotOptions**: *`DirOptions` & `Pick<CopyOptions, CopyOptionsProps>` & object*
+Ƭ **SnapshotOptions**: *DirOptions & Pick‹CopyOptions, [CopyOptionsProps](_directory_.md#copyoptionsprops)› & object*
 
 Defined in src/directory.ts:25
 
@@ -75,7 +73,7 @@ ___
 
 ###  SnapshotOptionsSync
 
-Ƭ **SnapshotOptionsSync**: *`DirOptions` & `Pick<CopyOptionsSync, CopyOptionsProps>` & object*
+Ƭ **SnapshotOptionsSync**: *DirOptions & Pick‹CopyOptionsSync, [CopyOptionsProps](_directory_.md#copyoptionsprops)› & object*
 
 Defined in src/directory.ts:34
 
@@ -87,7 +85,7 @@ Options passed to `snapshotSync`
 
 ### `Const` createRollback
 
-▸ **createRollback**(`__namedParameters`: object): *`(Anonymous function)`*
+▸ **createRollback**(`__namedParameters`: object): *(Anonymous function)*
 
 Defined in src/directory.ts:76
 
@@ -100,17 +98,17 @@ Creates a `rollback` closure
 Name | Type |
 ------ | ------ |
 `dest` | string |
-`preserveTimestampsDefault` | undefined \| false \| true |
-`recursiveDefault` | undefined \| false \| true |
+`preserveTimestampsDefault` | undefined &#124; false &#124; true |
+`recursiveDefault` | undefined &#124; false &#124; true |
 `src` | string |
 
-**Returns:** *`(Anonymous function)`*
+**Returns:** *(Anonymous function)*
 
 ___
 
 ### `Const` createRollbackSync
 
-▸ **createRollbackSync**(`__namedParameters`: object): *`(Anonymous function)`*
+▸ **createRollbackSync**(`__namedParameters`: object): *(Anonymous function)*
 
 Defined in src/directory.ts:105
 
@@ -123,17 +121,17 @@ Creates a `rollbackSync` closure
 Name | Type |
 ------ | ------ |
 `dest` | string |
-`preserveTimestampsDefault` | undefined \| false \| true |
-`recursiveDefault` | undefined \| false \| true |
+`preserveTimestampsDefault` | undefined &#124; false &#124; true |
+`recursiveDefault` | undefined &#124; false &#124; true |
 `src` | string |
 
-**Returns:** *`(Anonymous function)`*
+**Returns:** *(Anonymous function)*
 
 ___
 
 ### `Const` snapshot
 
-▸ **snapshot**(`__namedParameters`: object): *`Promise<Snapshot>`*
+▸ **snapshot**(`__namedParameters`: object): *Promise‹[Snapshot](../interfaces/_directory_.snapshot.md)›*
 
 Defined in src/directory.ts:131
 
@@ -146,13 +144,13 @@ Copies all the contents into a temporary location.
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`filter` | undefined \| function \| function | - |
+`filter` | undefined &#124; function &#124; function | - |
 `preserveTimestamps` | boolean | false |
 `recursive` | boolean | true |
 `src` | string | - |
-`tmpOptions` | [tmpOptions]() | - |
+`tmpOptions` | tmpOptions | - |
 
-**Returns:** *`Promise<Snapshot>`*
+**Returns:** *Promise‹[Snapshot](../interfaces/_directory_.snapshot.md)›*
 
 ___
 
@@ -171,10 +169,10 @@ Copies all the contents into a temporary location.
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`filter` | undefined \| function | - |
+`filter` | undefined &#124; function | - |
 `preserveTimestamps` | boolean | false |
 `recursive` | boolean | true |
 `src` | string | - |
-`tmpOptions` | [tmpOptions]() | - |
+`tmpOptions` | tmpOptions | - |
 
 **Returns:** *[Snapshot](../interfaces/_directory_.snapshot.md)*

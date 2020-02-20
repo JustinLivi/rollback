@@ -1,26 +1,54 @@
+## [0.2.11](https://github.com/JustinLivi/rollback/compare/v0.2.10...v0.2.11) (2020-02-20)
+
+
+### Upgrade
+
+* Update @types/fs-extra to version 8.1.0 ([271f0250dccd29d3cbdd57f61b0b1f250086f04c](https://github.com/JustinLivi/rollback/commit/271f0250dccd29d3cbdd57f61b0b1f250086f04c)), closes [#91](https://github.com/JustinLivi/rollback/issues/91)
+* Update @types/jest to version 25.1.3 ([61e3dcb033fdd5f335cd9076564902ded073353e](https://github.com/JustinLivi/rollback/commit/61e3dcb033fdd5f335cd9076564902ded073353e))
+* Update lockfile package-lock.json ([de71d9039f8d447aa16389add92c79ed114ba962](https://github.com/JustinLivi/rollback/commit/de71d9039f8d447aa16389add92c79ed114ba962))
+* Update lockfile package-lock.json ([e5a7844fa815b6b2ffc4f2693534dae186da51ef](https://github.com/JustinLivi/rollback/commit/e5a7844fa815b6b2ffc4f2693534dae186da51ef))
+* Update lockfile package-lock.json ([66e2ffb015b072ed83bfa0e39178c9cda8c79134](https://github.com/JustinLivi/rollback/commit/66e2ffb015b072ed83bfa0e39178c9cda8c79134))
+* Update lockfile package-lock.json ([1583522b850b14aa93010a32fdfc4f5506f85400](https://github.com/JustinLivi/rollback/commit/1583522b850b14aa93010a32fdfc4f5506f85400))
+* Update ts-jest to version 25.2.1 ([9459ab3c6edb2c9b2ff4b5c6d9d2abdca162a4d8](https://github.com/JustinLivi/rollback/commit/9459ab3c6edb2c9b2ff4b5c6d9d2abdca162a4d8))
+* Update typedoc to version 0.16.10 ([0a45e6f01eef51ff2951f19e455ecc90adedc9c9](https://github.com/JustinLivi/rollback/commit/0a45e6f01eef51ff2951f19e455ecc90adedc9c9))
+
+
+
 ## [0.2.10](https://github.com/JustinLivi/rollback/compare/v0.2.9...v0.2.10) (2020-02-13)
 
 
 ### Upgrade
 
 * Update @types/jest to version 24.0.16 ([5faf70677b0d46f2c035564c096ade9c5a98c721](https://github.com/JustinLivi/rollback/commit/5faf70677b0d46f2c035564c096ade9c5a98c721))
+* Update @types/mock-fs to version 4.10.0 ([c3450e1db0b6cb5e3aec6bdd577d7001b6fdcc3e](https://github.com/JustinLivi/rollback/commit/c3450e1db0b6cb5e3aec6bdd577d7001b6fdcc3e))
 * Update @types/node to version 12.6.7 ([e922f044c531769c6e7d47c6e36f1232447b6675](https://github.com/JustinLivi/rollback/commit/e922f044c531769c6e7d47c6e36f1232447b6675))
 * Update conventional-changelog-cli to version 2.0.23 ([e45808024bce3f0a51567bbea58e37f3b47c9933](https://github.com/JustinLivi/rollback/commit/e45808024bce3f0a51567bbea58e37f3b47c9933))
+* Update conventional-changelog-eslint to version 3.0.4 ([68e03ba1369f1f96432026b20859d7023907098c](https://github.com/JustinLivi/rollback/commit/68e03ba1369f1f96432026b20859d7023907098c))
+* Update conventional-recommended-bump to version 6.0.5 ([675dc010c009dc6a0804c8063b453999d09a18d2](https://github.com/JustinLivi/rollback/commit/675dc010c009dc6a0804c8063b453999d09a18d2)), closes [#86](https://github.com/JustinLivi/rollback/issues/86)
 * Update coveralls to version 3.0.6 ([4cf95c199fb9b25703fcf9d0f622bc0602989e51](https://github.com/JustinLivi/rollback/commit/4cf95c199fb9b25703fcf9d0f622bc0602989e51))
 * Update jest-extended to version 0.11.5 ([05043eac976b2263ba769d8e43bc5507b3d134bc](https://github.com/JustinLivi/rollback/commit/05043eac976b2263ba769d8e43bc5507b3d134bc))
-* Update lockfile package-lock.json ([1db98a33c1956e93abcb937111775da049fbc25f](https://github.com/JustinLivi/rollback/commit/1db98a33c1956e93abcb937111775da049fbc25f))
-* Update lockfile package-lock.json ([f99d4738ab9edee164173461ad156a85dc79fc8d](https://github.com/JustinLivi/rollback/commit/f99d4738ab9edee164173461ad156a85dc79fc8d))
-* Update lockfile package-lock.json ([9fb79ae7bdac4ddbeb9e6c9f8b65870d67cf728c](https://github.com/JustinLivi/rollback/commit/9fb79ae7bdac4ddbeb9e6c9f8b65870d67cf728c))
-* Update lockfile package-lock.json ([cd990f605eb62b4fdeedde5da2bf727abc3503b4](https://github.com/JustinLivi/rollback/commit/cd990f605eb62b4fdeedde5da2bf727abc3503b4))
+* Update lockfile package-lock.json ([3c39a70f5b9c4406ba80538666255bf9899f417f](https://github.com/JustinLivi/rollback/commit/3c39a70f5b9c4406ba80538666255bf9899f417f))
 * Update lockfile package-lock.json ([d581db9d9b4b53032a53b92de65ce19db9be2fe0](https://github.com/JustinLivi/rollback/commit/d581db9d9b4b53032a53b92de65ce19db9be2fe0))
-* Update lockfile package-lock.json ([1e0590b6baa4f2131c8730c354b373347058347f](https://github.com/JustinLivi/rollback/commit/1e0590b6baa4f2131c8730c354b373347058347f))
-* Update lockfile package-lock.json ([c24ef5a05104384cc390fdfb6321588221e2af5e](https://github.com/JustinLivi/rollback/commit/c24ef5a05104384cc390fdfb6321588221e2af5e))
+* Update lockfile package-lock.json ([70b27bdc321769281deb3de9be53ff5c506d861c](https://github.com/JustinLivi/rollback/commit/70b27bdc321769281deb3de9be53ff5c506d861c))
+* Update lockfile package-lock.json ([9fb79ae7bdac4ddbeb9e6c9f8b65870d67cf728c](https://github.com/JustinLivi/rollback/commit/9fb79ae7bdac4ddbeb9e6c9f8b65870d67cf728c))
+* Update lockfile package-lock.json ([857e5627551a42ad27bdb96ea55f8df0fe2892e5](https://github.com/JustinLivi/rollback/commit/857e5627551a42ad27bdb96ea55f8df0fe2892e5))
 * Update lockfile package-lock.json ([af505fc5f97a2e8b58ef417bfd21f886b179b715](https://github.com/JustinLivi/rollback/commit/af505fc5f97a2e8b58ef417bfd21f886b179b715))
+* Update lockfile package-lock.json ([80b3095cc54503b40e334ab075ea3c1554b7d672](https://github.com/JustinLivi/rollback/commit/80b3095cc54503b40e334ab075ea3c1554b7d672))
+* Update lockfile package-lock.json ([299995e747883a3b8e71dd330e8eed583a13adcf](https://github.com/JustinLivi/rollback/commit/299995e747883a3b8e71dd330e8eed583a13adcf))
+* Update lockfile package-lock.json ([1db98a33c1956e93abcb937111775da049fbc25f](https://github.com/JustinLivi/rollback/commit/1db98a33c1956e93abcb937111775da049fbc25f))
+* Update lockfile package-lock.json ([c24ef5a05104384cc390fdfb6321588221e2af5e](https://github.com/JustinLivi/rollback/commit/c24ef5a05104384cc390fdfb6321588221e2af5e))
+* Update lockfile package-lock.json ([f99d4738ab9edee164173461ad156a85dc79fc8d](https://github.com/JustinLivi/rollback/commit/f99d4738ab9edee164173461ad156a85dc79fc8d))
 * Update lockfile package-lock.json ([88011cf622d77b8b25046723af89802ab6c8175e](https://github.com/JustinLivi/rollback/commit/88011cf622d77b8b25046723af89802ab6c8175e))
+* Update lockfile package-lock.json ([cd990f605eb62b4fdeedde5da2bf727abc3503b4](https://github.com/JustinLivi/rollback/commit/cd990f605eb62b4fdeedde5da2bf727abc3503b4))
+* Update lockfile package-lock.json ([bf24fe71d03f1154206644e2815689ac8a7d1725](https://github.com/JustinLivi/rollback/commit/bf24fe71d03f1154206644e2815689ac8a7d1725))
+* Update lockfile package-lock.json ([1e0590b6baa4f2131c8730c354b373347058347f](https://github.com/JustinLivi/rollback/commit/1e0590b6baa4f2131c8730c354b373347058347f))
+* Update mock-fs to version 4.10.4 ([880505e89b9c92389c2901b90cb0a51dfadc4d0e](https://github.com/JustinLivi/rollback/commit/880505e89b9c92389c2901b90cb0a51dfadc4d0e)), closes [#92](https://github.com/JustinLivi/rollback/issues/92)
+* Update prettier to version 1.19.1 ([21b8166414d5248b3a9c549e5e093cf397fec8d1](https://github.com/JustinLivi/rollback/commit/21b8166414d5248b3a9c549e5e093cf397fec8d1)), closes [#94](https://github.com/JustinLivi/rollback/issues/94)
 * Update ts-jest to version 24.1.0 ([c6ff0e2e03807aba035742873da439926b0673d9](https://github.com/JustinLivi/rollback/commit/c6ff0e2e03807aba035742873da439926b0673d9))
 * Update typedoc to version 0.15.0 ([8368b9bf84904e9301f8d597c4bbb3a9bf97a841](https://github.com/JustinLivi/rollback/commit/8368b9bf84904e9301f8d597c4bbb3a9bf97a841))
 * Update typedoc to version 0.16.0 ([716e803c81209cc2585145372d65c3a3f8a489e0](https://github.com/JustinLivi/rollback/commit/716e803c81209cc2585145372d65c3a3f8a489e0))
 * Update typedoc to version 0.16.9 ([8e794077cc40d9ae1415537ec025fd54f066a3c8](https://github.com/JustinLivi/rollback/commit/8e794077cc40d9ae1415537ec025fd54f066a3c8))
+* Update typedoc-plugin-markdown to version 2.2.16 ([058c76095d434e7caba66ae2a74ca0ac53a191a1](https://github.com/JustinLivi/rollback/commit/058c76095d434e7caba66ae2a74ca0ac53a191a1)), closes [#82](https://github.com/JustinLivi/rollback/issues/82)
 
 
 
