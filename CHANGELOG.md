@@ -1,3 +1,19 @@
+## [0.2.12](https://github.com/JustinLivi/rollback/compare/v0.2.11...v0.2.12) (2020-03-15)
+
+
+### Upgrade
+
+* Update @types/jest to version 25.1.4 ([067e340885ab2549279d34a9f1b128a1d588e127](https://github.com/JustinLivi/rollback/commit/067e340885ab2549279d34a9f1b128a1d588e127))
+* Update lockfile package-lock.json ([12c9b6e696c4bdb3a78d6c2f1354ad2301e9c92e](https://github.com/JustinLivi/rollback/commit/12c9b6e696c4bdb3a78d6c2f1354ad2301e9c92e))
+* Update lockfile package-lock.json ([42e1163d2e0f11b9e9a31fa5233ab717cb496d41](https://github.com/JustinLivi/rollback/commit/42e1163d2e0f11b9e9a31fa5233ab717cb496d41))
+* Update lockfile package-lock.json ([a0e627a4bb75682ab5ed7da1906a916bd0141c64](https://github.com/JustinLivi/rollback/commit/a0e627a4bb75682ab5ed7da1906a916bd0141c64))
+* Update lockfile package-lock.json ([da4079f056cbbcb974f597cae883d9e8d3c36a56](https://github.com/JustinLivi/rollback/commit/da4079f056cbbcb974f597cae883d9e8d3c36a56))
+* Update mock-fs to version 4.11.0 ([0f8e543c85df1374fb39c68cdec759f9e58dd38a](https://github.com/JustinLivi/rollback/commit/0f8e543c85df1374fb39c68cdec759f9e58dd38a))
+* Update typedoc to version 0.16.11 ([3ec4f894de47130e20330c1041ea6ec77fd4f2e7](https://github.com/JustinLivi/rollback/commit/3ec4f894de47130e20330c1041ea6ec77fd4f2e7))
+* Update typedoc-plugin-markdown to version 2.2.17 ([945e7c41738f69ab5f6bb7d38763cf5235d6e1bf](https://github.com/JustinLivi/rollback/commit/945e7c41738f69ab5f6bb7d38763cf5235d6e1bf))
+
+
+
 ## [0.2.11](https://github.com/JustinLivi/rollback/compare/v0.2.10...v0.2.11) (2020-02-20)
 
 
