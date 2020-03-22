@@ -36,7 +36,7 @@
   "homepage": "https://github.com/JustinLivi/rollback#readme",
   "dependencies": {
     "@types/fs-extra": "8.1.0",
-    "@types/node": "12.6.7",
+    "@types/node": "12.12.30",
     "@types/tmp": "0.1.0",
     "fs-extra": "8.1.0",
     "graceful-fs": "^4.2.0",
