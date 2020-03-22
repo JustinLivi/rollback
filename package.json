@@ -39,7 +39,7 @@
     "@types/node": "12.6.7",
     "@types/tmp": "0.1.0",
     "fs-extra": "8.1.0",
-    "graceful-fs": "^4.2.0",
+    "graceful-fs": "^4.2.3",
     "tmp-promise": "2.0.2"
   },
   "devDependencies": {
