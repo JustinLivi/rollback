@@ -6,7 +6,7 @@
 [![NPM](https://img.shields.io/npm/l/rollback.svg)](https://www.npmjs.com/package/rollback)
 [![node](https://img.shields.io/node/v/rollback.svg)](https://github.com/JustinLivi/rollback/blob/master/package.json)
 [![npm](https://img.shields.io/npm/v/rollback.svg)](https://www.npmjs.com/package/rollback)
-[![Greenkeeper badge](https://badges.greenkeeper.io/JustinLivi/rollback.svg)](https://greenkeeper.io/)
+
 [![npm type definitions](https://img.shields.io/npm/types/rollback.svg)](https://github.com/JustinLivi/rollback/blob/master/package.json)
 
 > Rollback the rock!
