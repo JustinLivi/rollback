@@ -1,3 +1,13 @@
+## [0.2.13](https://github.com/JustinLivi/rollback/compare/v0.2.12...v0.2.13) (2020-03-22)
+
+
+### fix
+
+* upgrade @types/node from 12.6.7 to 12.12.30 ([921f82d50e1a18fd1f450b827a03d79142715ca9](https://github.com/JustinLivi/rollback/commit/921f82d50e1a18fd1f450b827a03d79142715ca9))
+* upgrade graceful-fs from 4.2.0 to 4.2.3 ([c32df5801d406874831a24d1860e0c3529643691](https://github.com/JustinLivi/rollback/commit/c32df5801d406874831a24d1860e0c3529643691))
+
+
+
 ## [0.2.12](https://github.com/JustinLivi/rollback/compare/v0.2.11...v0.2.12) (2020-03-15)
 
 

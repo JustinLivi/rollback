@@ -1,6 +1,6 @@
 {
   "name": "rollback",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "description": "Rollback a directory to a prior snapshot",
   "main": "build/index.js",
   "engines": {
