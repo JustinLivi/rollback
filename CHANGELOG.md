@@ -1,3 +1,19 @@
+## [0.2.14](https://github.com/JustinLivi/rollback/compare/v0.2.13...v0.2.14) (2020-04-30)
+
+
+### fix
+
+* upgrade @types/node from 12.12.30 to 12.12.31 ([a7fc0017a4feead96d174938e9e3d65881bfe2ef](https://github.com/JustinLivi/rollback/commit/a7fc0017a4feead96d174938e9e3d65881bfe2ef))
+* upgrade @types/node from 12.12.31 to 12.12.32 ([4bac81b9bd4281b68a90db0c0e319b52fd5fc1f8](https://github.com/JustinLivi/rollback/commit/4bac81b9bd4281b68a90db0c0e319b52fd5fc1f8))
+* upgrade @types/node from 12.12.32 to 12.12.35 ([56cababb7ccfd4a1307507ee7dd152439cb1d9f4](https://github.com/JustinLivi/rollback/commit/56cababb7ccfd4a1307507ee7dd152439cb1d9f4))
+* upgrade @types/node from 12.12.35 to 12.12.36 ([a74e437df133343a7b960611654a9bdbe3ea824e](https://github.com/JustinLivi/rollback/commit/a74e437df133343a7b960611654a9bdbe3ea824e))
+* upgrade @types/node from 12.12.36 to 12.12.37 ([35a2863f1ea9ced780349b5e0863048a0cb9f2d0](https://github.com/JustinLivi/rollback/commit/35a2863f1ea9ced780349b5e0863048a0cb9f2d0))
+* upgrade @types/node from 12.12.36 to 12.12.37 ([a6793b5878eb8c883c4c98beed8904028410588e](https://github.com/JustinLivi/rollback/commit/a6793b5878eb8c883c4c98beed8904028410588e))
+* upgrade graceful-fs from 4.2.3 to 4.2.4 ([2f3a433927de7d9f320a4601dbe440affd51595b](https://github.com/JustinLivi/rollback/commit/2f3a433927de7d9f320a4601dbe440affd51595b))
+* upgrade graceful-fs from 4.2.3 to 4.2.4 ([9bebd46111d6c3b53fedf91e638ca93440f09b69](https://github.com/JustinLivi/rollback/commit/9bebd46111d6c3b53fedf91e638ca93440f09b69))
+
+
+
 ## [0.2.13](https://github.com/JustinLivi/rollback/compare/v0.2.12...v0.2.13) (2020-03-22)
 
 
