@@ -41,7 +41,7 @@
   "dependencies": {
     "@types/fs-extra": "8.1.0",
     "@types/node": "12.12.37",
-    "@types/tmp": "0.1.0",
+    "@types/tmp": "0.2.0",
     "fs-extra": "8.1.0",
     "graceful-fs": "^4.2.4",
     "tmp-promise": "2.0.2"
