@@ -155,7 +155,7 @@ release:
     paths:
       - node_modules
   script:
-    - npm ci
+    - npm install
     - git remote add upstream "$UPSTREAM"
     - git config user.email "$GITLAB_USER_EMAIL"
     - git config user.name "$GITLAB_USER_NAME"
