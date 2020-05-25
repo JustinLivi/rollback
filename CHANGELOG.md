@@ -1,3 +1,28 @@
+## [0.2.16](https://github.com/JustinLivi/rollback/compare/v0.2.15...v0.2.16) (2020-05-25)
+
+
+### Build
+
+* Resolve install command mismatch ([effe9af](https://github.com/JustinLivi/rollback/commit/effe9aff294e79f327e496e696366303a14283d9))
+
+### fix
+
+* upgrade @types/fs-extra from 8.1.0 to 8.1.1 ([790bad6](https://github.com/JustinLivi/rollback/commit/790bad6b686f6a7d9380397fae92d67855c3fc12))
+* upgrade @types/fs-extra from 8.1.0 to 8.1.1 ([0274aba](https://github.com/JustinLivi/rollback/commit/0274aba948374b439d9432eeb39fa4d85ce39ac6))
+* upgrade @types/node from 12.12.37 to 12.12.38 ([a0818c9](https://github.com/JustinLivi/rollback/commit/a0818c913ff08f8f15b296f58ebabecfb856ee5f))
+* upgrade @types/node from 12.12.37 to 12.12.38 ([9d875f4](https://github.com/JustinLivi/rollback/commit/9d875f49594b13d6b2782ea94f4b9b6ea5c8c0ba))
+* upgrade @types/tmp from 0.1.0 to 0.2.0 ([29c2b2e](https://github.com/JustinLivi/rollback/commit/29c2b2ed3b219aabe87aa41ed81c88c1dc762bfc))
+* upgrade @types/tmp from 0.1.0 to 0.2.0 ([a8c2bee](https://github.com/JustinLivi/rollback/commit/a8c2beead88500f963f29d9b731f4e2dcc53c1bf))
+* upgrade tmp-promise from 2.0.2 to 2.1.1 ([5dfea14](https://github.com/JustinLivi/rollback/commit/5dfea14aee34362c223576f068a6432cb72a0a5b))
+* upgrade tmp-promise from 2.0.2 to 2.1.1 ([9eb1ff4](https://github.com/JustinLivi/rollback/commit/9eb1ff4c05d7d0292b8e76709163ee27ffc822c9))
+
+### Fix
+
+* Add missing package-lock configuration ([cbb6d20](https://github.com/JustinLivi/rollback/commit/cbb6d20534f02b631bc63c8524d2641a8c78deb5))
+* prevent cd package mutations ([af4a647](https://github.com/JustinLivi/rollback/commit/af4a647046b9f0b081289e773dd8ff5e03a8da32))
+
+
+
 ## [0.2.15](https://github.com/JustinLivi/rollback/compare/v0.2.14...v0.2.15) (2020-05-03)
 
 
