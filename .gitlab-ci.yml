@@ -156,6 +156,7 @@ release:
       - node_modules
   script:
     - npm install
+    - git checkout .
     - git remote add upstream "$UPSTREAM"
     - git config user.email "$GITLAB_USER_EMAIL"
     - git config user.name "$GITLAB_USER_NAME"
