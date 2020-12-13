@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@types/fs-extra": "8.1.1",
-    "@types/node": "12.19.8",
+    "@types/node": "12.19.9",
     "@types/tmp": "0.2.0",
     "fs-extra": "8.1.0",
     "graceful-fs": "^4.2.4",
