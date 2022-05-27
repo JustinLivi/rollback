@@ -42,7 +42,7 @@
     "@types/fs-extra": "8.1.1",
     "@types/node": "12.19.8",
     "@types/tmp": "0.2.0",
-    "fs-extra": "8.1.0",
+    "fs-extra": "^9.0.0",
     "graceful-fs": "^4.2.4",
     "tmp-promise": "2.1.1"
   },
